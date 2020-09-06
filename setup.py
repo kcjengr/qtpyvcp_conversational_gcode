@@ -14,8 +14,8 @@ setup(
     description="QtPyVCP Conversation G-code generator widgets.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/kcjengr/qtpyvcp.coversational-gcode",
-    download_url="https://github.com/kcjengr/qtpyvcp.coversational-gcode/tarball/master",
+    url="https://github.com/kcjengr/qtpyvcp.conversational-gcode",
+    download_url="https://github.com/kcjengr/qtpyvcp.conversational-gcode/tarball/master",
     packages=find_packages(),
     include_package_data=True,
     entry_points=entry_points
