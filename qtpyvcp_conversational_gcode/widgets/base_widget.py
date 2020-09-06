@@ -9,7 +9,6 @@ from qtpy.QtWidgets import QWidget, QMessageBox
 from qtpyvcp.actions.program_actions import load as loadProgram
 from qtpyvcp.plugins import getPlugin
 from qtpyvcp.utilities import logger
-
 from qtpyvcp_conversational_gcode.ops.gcode_file import GCodeFile
 
 LOG = logger.getLogger(__name__)
@@ -29,6 +28,13 @@ class ConversationalBaseWidget(QWidget):
         uic.loadUi(os.path.join(os.path.dirname(__file__), ui_file), self)
 
         self._tool_is_valid = False
+        self._tool_table = TOOL_TABLE.getToolTable()
+
+        self._validators = [self._validate_z_heights,
+                            self._validate_spindle_rpm,
+                            self._validate_xy_feed_rate,
+                            self._validate_z_feed_rate,
+                            self._validate_tool_number]
 
         self.wcs_input.addItem('G54')
         self.wcs_input.addItem('G55')
@@ -117,7 +123,7 @@ class ConversationalBaseWidget(QWidget):
             self.drill_type_param_label.setVisible(False)
 
     def set_tool_description_from_tool_num(self):
-        tool_table = TOOL_TABLE.getToolTable()
+        tool_table = self._tool_table
         tool_number = self.tool_number()
         try:
             desc = tool_table[tool_number]['R']
@@ -192,35 +198,33 @@ class ConversationalBaseWidget(QWidget):
             program_path = self._get_next_available_file_name()
 
             f.write_to_file(program_path)
-
-            msg = QMessageBox(QMessageBox.Question,
-                              'GCode Generated', 'The file has been created.\n'
-                                                 'Would you like to load it into the viewer?',
-                              QMessageBox.Yes | QMessageBox.No, self, Qt.FramelessWindowHint)
-
-            if msg.exec_() == QMessageBox.Yes:
+            if self._confirm_action('Load GCode', 'Would you like to open the file in the viewer?'):
                 loadProgram(program_path)
-
         else:
-            msg = QMessageBox(QMessageBox.Critical,
-                              'GCode Error', '\n'.join(errors),
-                              QMessageBox.Ok, self, Qt.FramelessWindowHint)
-            msg.exec_()
+            self._show_error_msg('GCode Error', '\n'.join(errors))
 
     def is_valid(self):
         errors = []
-        funcs = [self._validate_z_heights,
-                 self._validate_spindle_rpm,
-                 self._validate_xy_feed_rate,
-                 self._validate_z_feed_rate,
-                 self._validate_tool_number,]
-
-        for f in funcs:
+        for f in self._validators:
             ok, error = f()
             if not ok:
                 errors.append(error)
 
         return len(errors) == 0, errors
+
+    def _set_common_fields(self, op):
+        op.wcs = self.wcs()
+        op.coolant = self.coolant()
+        op.units = self.unit()
+        op.tool_number = self.tool_number()
+        op.spindle_rpm = self.spindle_rpm()
+        op.spindle_dir = self.spindle_direction()
+        op.z_clear = self.clearance_height()
+        op.xy_feed = self.xy_feed_rate()
+        op.z_start = self.z_start()
+        op.z_end = self.z_end()
+        op.retract = self.retract_height()
+        op.z_feed = self.z_feed_rate()
 
     def _get_next_available_file_name(self):
         if self.name() == '':
@@ -288,3 +292,14 @@ class ConversationalBaseWidget(QWidget):
             self.tool_number_input.setToolTip(error)
             return False, error
 
+    def _confirm_action(self, title, message):
+        msg = QMessageBox(QMessageBox.Question, title, message, QMessageBox.Yes | QMessageBox.No, self,
+                          Qt.FramelessWindowHint)
+
+        return msg.exec_() == QMessageBox.Yes
+
+    def _show_error_msg(self, title, message):
+        msg = QMessageBox(QMessageBox.Critical, title, message, QMessageBox.Ok, self,
+                          Qt.FramelessWindowHint)
+
+        msg.exec_()

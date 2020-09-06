@@ -1,5 +1,6 @@
-from qtpyvcp_conversational_gcode.widgets.base_widget import ConversationalBaseWidget
 from qtpyvcp_conversational_gcode.ops.drill_ops import DrillOps
+from qtpyvcp_conversational_gcode.widgets.base_widget import ConversationalBaseWidget
+
 
 class HoleCircleWidget(ConversationalBaseWidget):
     def __init__(self, parent=None):
@@ -7,6 +8,8 @@ class HoleCircleWidget(ConversationalBaseWidget):
 
         self.diameter_input.editingFinished.connect(self._validate_diameter)
         self.num_holes_input.editingFinished.connect(self._validate_num_holes)
+
+        self._validators.extend([self._validate_num_holes, self._validate_diameter])
 
     def circle_diameter(self):
         return self.diameter_input.value()
@@ -22,19 +25,7 @@ class HoleCircleWidget(ConversationalBaseWidget):
 
     def create_op(self):
         d = DrillOps()
-        d.wcs = self.wcs()
-        d.coolant = self.coolant()
-        d.units = self.unit()
-        d.tool_number = self.tool_number()
-        d.spindle_rpm = self.spindle_rpm()
-        d.spindle_dir = self.spindle_direction()
-        d.z_clear = self.clearance_height()
-        d.xy_feed = self.xy_feed_rate()
-        d.z_start = self.z_start()
-        d.z_end = self.z_end()
-        d.retract = self.retract_height()
-        d.z_feed = self.z_feed_rate()
-
+        self._set_common_fields(d)
         d.add_hole_circle(num_holes=self.num_holes(),
                           circle_diam=self.circle_diameter(),
                           circle_center=self.circle_center(),
@@ -54,22 +45,6 @@ class HoleCircleWidget(ConversationalBaseWidget):
             op = d.drill()
 
         return op
-
-    def is_valid(self):
-        errors = []
-        funcs = [self._validate_diameter,
-                 self._validate_num_holes]
-
-        for f in funcs:
-            ok, error = f()
-            if not ok:
-                errors.append(error)
-
-        ok, error = super(HoleCircleWidget, self).is_valid()
-        if not ok:
-            errors.extend(error)
-
-        return len(errors) == 0, errors
 
     def _validate_diameter(self):
         if self.circle_diameter() > 0:

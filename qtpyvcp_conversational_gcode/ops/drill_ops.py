@@ -3,7 +3,6 @@ from __future__ import division
 import math
 
 from base_op import BaseGenerator
-from qtpyvcp_conversational_gcode.ops.gcode_file import GCodeFile
 
 
 class DrillOps(BaseGenerator):
