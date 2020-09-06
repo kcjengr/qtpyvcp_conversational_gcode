@@ -1,0 +1,20 @@
+/build
+/dist
+/venv
+*.egg-info
+*.pyc
+*.pdf
+*.log
+*.var
+*.var.bak
+*.pref
+*.halscope
+.tmp*
+.idea/
+*~
+*#
+
+# Compiled Qt resource and ui files
+*_rc.py
+*_ui.py
+
