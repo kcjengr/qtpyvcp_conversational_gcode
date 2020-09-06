@@ -1,8 +1,8 @@
 from qtpyvcp_conversational_gcode.ops.drill_ops import DrillOps
-from qtpyvcp_conversational_gcode.widgets.base_widget import ConversationalBaseWidget
+from qtpyvcp_conversational_gcode.widgets.drill_widget import DrillWidgetBase
 
 
-class HoleCircleWidget(ConversationalBaseWidget):
+class HoleCircleWidget(DrillWidgetBase):
     def __init__(self, parent=None):
         super(HoleCircleWidget, self).__init__(parent, 'hole_circle.ui')
 

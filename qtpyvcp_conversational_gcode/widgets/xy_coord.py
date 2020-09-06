@@ -3,8 +3,8 @@ from qtpy.QtGui import QStandardItemModel
 from qtpy.QtWidgets import QTableView, QStyledItemDelegate
 
 from qtpyvcp_conversational_gcode.ops.drill_ops import DrillOps
+from qtpyvcp_conversational_gcode.widgets.drill_widget import DrillWidgetBase
 from qtpyvcp_conversational_gcode.widgets.float_line_edit import FloatLineEdit
-from qtpyvcp_conversational_gcode.widgets.base_widget import ConversationalBaseWidget
 
 
 class XYCoordItemDelegate(QStyledItemDelegate):
@@ -81,7 +81,7 @@ class XYCoordModel(QStandardItemModel):
             return False
 
 
-class XYCoordWidget(ConversationalBaseWidget):
+class XYCoordWidget(DrillWidgetBase):
     def __init__(self, parent=None):
         super(XYCoordWidget, self).__init__(parent, 'xy_coord.ui')
 
