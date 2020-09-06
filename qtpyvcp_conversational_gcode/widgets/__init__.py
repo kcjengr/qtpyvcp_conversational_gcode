@@ -1,5 +1,6 @@
 from qtpyvcp.widgets.qtdesigner import _DesignerPlugin
 
+from qtpyvcp_conversational_gcode.widgets.facing import *
 from qtpyvcp_conversational_gcode.widgets.xy_coord import *
 from qtpyvcp_conversational_gcode.widgets.hole_circle import *
 from qtpyvcp_conversational_gcode.widgets.int_line_edit import *
@@ -24,3 +25,8 @@ class HoleCircleWidgetPlugin(_DesignerPlugin):
 class XYCoordWidgetPlugin(_DesignerPlugin):
     def pluginClass(self):
         return XYCoordWidget
+
+
+class FacingWidgetPlugin(_DesignerPlugin):
+    def pluginClass(self):
+        return FacingWidget
