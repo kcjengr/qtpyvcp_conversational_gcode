@@ -97,8 +97,8 @@ class XYCoordWidget(DrillWidgetBase):
 
     def create_op(self):
         d = self.drill_op
-
         self._set_common_fields(d)
+        d.retract_mode = self.retract_mode()
 
         if self.drill_type() == 'PECK':
             op = d.peck(self.drill_peck_depth())
