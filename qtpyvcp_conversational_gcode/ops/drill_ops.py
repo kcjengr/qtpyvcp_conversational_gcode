@@ -88,28 +88,30 @@ class DrillOps(BaseGenerator):
         """
     def __init__(self):
         super(DrillOps, self).__init__()
+        self.retract_mode = 'G98'
         self.holes = []
 
     def drill(self):
-        return self._create_gcode('G98 G81 R%.4f Z%.4f F%.4f' %
-                                  (self.z_start + self.retract, self.z_end, self.z_feed))
+        return self._create_gcode('%s G81 R%.4f Z%.4f F%.4f' %
+                                  (self.retract_mode, self.z_start + self.retract, self.z_end, self.z_feed))
 
     def dwell(self, dwell_time=0.):
-        return self._create_gcode('G98 G82 R%.4f Z%.4f P%.4f F%.4f' %
-                                  (self.z_start + self.retract, self.z_end, dwell_time, self.z_feed))
+        return self._create_gcode('%s G82 R%.4f Z%.4f P%.4f F%.4f' %
+                                  (self.retract_mode, self.z_start + self.retract, self.z_end, dwell_time, self.z_feed))
 
     def peck(self, peck_dist=0.1):
-        return self._create_gcode('G98 G83 R%.4f Z%.4f Q%.4f F%.4f' %
-                                  (self.z_start + self.retract, self.z_end, peck_dist, self.z_feed))
+        return self._create_gcode('%s G83 R%.4f Z%.4f Q%.4f F%.4f' %
+                                  (self.retract_mode, self.z_start + self.retract, self.z_end, peck_dist, self.z_feed))
 
     def chip_break(self, break_dist=0.1):
-        return self._create_gcode('G98 G73 R%.4f Z%.4f Q%.4f F%.4f' %
-                                   (self.z_start + self.retract, self.z_end, break_dist, self.z_feed))
+        return self._create_gcode('%s G73 R%.4f Z%.4f Q%.4f F%.4f' %
+                                   (self.retract_mode, self.z_start + self.retract, self.z_end, break_dist, self.z_feed))
 
     def tap(self, pitch):
         feed = abs(self.spindle_rpm * pitch)
-        return self._create_gcode('G98 %s R%.4f Z%.4f F%.4f S%.4f' %
-                                  ('G74' if self.spindle_dir.lower() == 'ccw' else 'G84', self.z_start + self.retract,
+        return self._create_gcode('%s %s R%.4f Z%.4f F%.4f S%.4f' %
+                                  (self.retract_mode, 'G74' if self.spindle_dir.lower() == 'ccw' else 'G84',
+                                   self.z_start + self.retract,
                                    self.z_end, feed, abs(self.spindle_rpm)))
 
     def rigid_tap(self, pitch):

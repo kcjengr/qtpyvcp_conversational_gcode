@@ -1143,12 +1143,12 @@ color: rgb(255, 255, 255);
        <property name="minimumSize">
         <size>
          <width>470</width>
-         <height>430</height>
+         <height>490</height>
         </size>
        </property>
        <property name="maximumSize">
         <size>
-         <width>470</width>
+         <width>490</width>
          <height>460</height>
         </size>
        </property>
@@ -1259,6 +1259,22 @@ color: rgb(255, 255, 255);
               </property>
              </widget>
             </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="wcs_input">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>33</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>33</height>
+               </size>
+              </property>
+             </widget>
+            </item>
             <item row="2" column="0">
              <widget class="QLabel" name="label_169">
               <property name="sizePolicy">
@@ -1293,6 +1309,22 @@ color: rgb(255, 255, 255);
               </property>
               <property name="indent">
                <number>0</number>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="unit_input">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>33</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>33</height>
+               </size>
               </property>
              </widget>
             </item>
@@ -1415,7 +1447,7 @@ color: rgb(255, 255, 255);
               </item>
              </layout>
             </item>
-            <item row="4" column="0">
+            <item row="5" column="0">
              <widget class="QLabel" name="tool_number_label_3">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1452,7 +1484,7 @@ color: rgb(255, 255, 255);
               </property>
              </widget>
             </item>
-            <item row="4" column="1">
+            <item row="5" column="1">
              <layout class="QHBoxLayout" name="horizontalLayout_10">
               <item>
                <widget class="IntLineEdit" name="tool_number_input">
@@ -1521,7 +1553,7 @@ color: rgb(255, 255, 255);
               </item>
              </layout>
             </item>
-            <item row="5" column="0">
+            <item row="6" column="0">
              <widget class="QLabel" name="label_170">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1558,7 +1590,7 @@ color: rgb(255, 255, 255);
               </property>
              </widget>
             </item>
-            <item row="5" column="1">
+            <item row="6" column="1">
              <layout class="QHBoxLayout" name="horizontalLayout_11">
               <item>
                <widget class="FloatLineEdit" name="spindle_rpm_input">
@@ -1640,7 +1672,7 @@ color: rgb(255, 255, 255);
               </item>
              </layout>
             </item>
-            <item row="6" column="0">
+            <item row="7" column="0">
              <widget class="QLabel" name="label_172">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1677,7 +1709,23 @@ color: rgb(255, 255, 255);
               </property>
              </widget>
             </item>
-            <item row="7" column="0">
+            <item row="7" column="1">
+             <widget class="QComboBox" name="coolant_input">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>33</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>33</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="0">
              <widget class="QLabel" name="label_173">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1714,7 +1762,7 @@ color: rgb(255, 255, 255);
               </property>
              </widget>
             </item>
-            <item row="7" column="1">
+            <item row="8" column="1">
              <widget class="FloatLineEdit" name="xy_feed_rate_input">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -1739,7 +1787,7 @@ color: rgb(255, 255, 255);
               </property>
              </widget>
             </item>
-            <item row="8" column="0">
+            <item row="9" column="0">
              <widget class="QLabel" name="label_174">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1776,7 +1824,7 @@ color: rgb(255, 255, 255);
               </property>
              </widget>
             </item>
-            <item row="8" column="1">
+            <item row="9" column="1">
              <widget class="FloatLineEdit" name="z_feed_rate_input">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -1801,7 +1849,7 @@ color: rgb(255, 255, 255);
               </property>
              </widget>
             </item>
-            <item row="10" column="0">
+            <item row="11" column="0">
              <widget class="QLabel" name="label_175">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
@@ -1838,7 +1886,7 @@ color: rgb(255, 255, 255);
               </property>
              </widget>
             </item>
-            <item row="10" column="1">
+            <item row="11" column="1">
              <widget class="FloatLineEdit" name="clearance_height_input">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -1863,40 +1911,45 @@ color: rgb(255, 255, 255);
               </property>
              </widget>
             </item>
-            <item row="1" column="1">
-             <widget class="QComboBox" name="wcs_input">
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_176">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="minimumSize">
                <size>
-                <width>100</width>
-                <height>33</height>
+                <width>120</width>
+                <height>31</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>100</width>
-                <height>33</height>
+                <width>120</width>
+                <height>31</height>
                </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="lineWidth">
+               <number>0</number>
+              </property>
+              <property name="text">
+               <string>RETRACT MODE</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+              </property>
+              <property name="indent">
+               <number>0</number>
               </property>
              </widget>
             </item>
-            <item row="2" column="1">
-             <widget class="QComboBox" name="unit_input">
-              <property name="minimumSize">
-               <size>
-                <width>100</width>
-                <height>33</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>100</width>
-                <height>33</height>
-               </size>
-              </property>
-             </widget>
-            </item>
-            <item row="6" column="1">
-             <widget class="QComboBox" name="coolant_input">
+            <item row="4" column="1">
+             <widget class="QComboBox" name="drill_retract_mode_input">
               <property name="minimumSize">
                <size>
                 <width>100</width>

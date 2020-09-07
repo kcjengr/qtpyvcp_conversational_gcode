@@ -26,6 +26,8 @@ class HoleCircleWidget(DrillWidgetBase):
     def create_op(self):
         d = DrillOps()
         self._set_common_fields(d)
+        d.retract_mode = self.retract_mode()
+
         d.add_hole_circle(num_holes=self.num_holes(),
                           circle_diam=self.circle_diameter(),
                           circle_center=self.circle_center(),

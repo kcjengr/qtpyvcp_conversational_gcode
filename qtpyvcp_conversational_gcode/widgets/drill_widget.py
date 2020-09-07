@@ -5,6 +5,9 @@ class DrillWidgetBase(ConversationalBaseWidget):
     def __init__(self, ui, parent=None):
         super(DrillWidgetBase, self).__init__(ui, parent)
 
+        self.drill_retract_mode_input.addItem('G98')
+        self.drill_retract_mode_input.addItem('G99')
+
         self.drill_type_input.addItem('DRILL')
         self.drill_type_input.addItem('PECK')
         self.drill_type_input.addItem('BREAK')
@@ -31,6 +34,9 @@ class DrillWidgetBase(ConversationalBaseWidget):
 
     def tap_pitch(self):
         return self.drill_type_param_value.value()
+
+    def retract_mode(self):
+        return self.drill_retract_mode_input.currentText()
 
     def set_drill_type_params(self, _):
         self.z_feed_rate_input.setEnabled(True)

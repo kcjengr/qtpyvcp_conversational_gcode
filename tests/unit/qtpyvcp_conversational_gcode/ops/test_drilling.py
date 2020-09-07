@@ -38,6 +38,28 @@ class TestDrilling(unittest.TestCase):
         op = self.sut.drill()
         self.assertEqual(op, expected_gcode)
 
+    def test_should_use_g99_when_specified(self):
+        expected_gcode = [
+            'G21',
+            'T4 M6 G43',
+            'S1200.0000',
+            'M3',
+            'G55',
+            'F60.0000',
+            'G0 X4.0000 Y1.0000',
+            'G0 Z0.2000',
+            'G99 G81 R1.0200 Z0.5000 F4.8000',
+            'G80',
+            'G0 Z0.2000'
+        ]
+
+        self.sut.retract_mode = 'G99'
+        self.sut.holes.append((4., 1.))
+
+        op = self.sut.drill()
+        self.assertEqual(op, expected_gcode)
+
+
     def test_should_drill_multiple_holes_at_the_given_locations(self):
         expected_gcode = [
             'G21',
