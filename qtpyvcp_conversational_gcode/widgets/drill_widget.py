@@ -14,6 +14,7 @@ class DrillWidgetBase(ConversationalBaseWidget):
         self.drill_type_input.addItem('DWELL')
         self.drill_type_input.addItem('TAP')
         self.drill_type_input.addItem('RIGID TAP')
+        self.drill_type_input.addItem('MANUAL')
         self.drill_type_param_value.setVisible(False)
         self.drill_type_param_label.setVisible(False)
         self.drill_type_input.currentIndexChanged.connect(self.set_drill_type_params)

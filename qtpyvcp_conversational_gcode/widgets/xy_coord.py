@@ -110,6 +110,8 @@ class XYCoordWidget(DrillWidgetBase):
             op = d.tap(self.tap_pitch())
         elif self.drill_type() == 'RIGID TAP':
             op = d.rigid_tap(self.tap_pitch())
+        elif self.drill_type() == 'MANUAL':
+            op = d.manual()
         else:
             op = d.drill()
 

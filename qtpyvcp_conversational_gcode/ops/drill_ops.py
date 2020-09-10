@@ -91,6 +91,19 @@ class DrillOps(BaseGenerator):
         self.retract_mode = 'G98'
         self.holes = []
 
+    def manual(self):
+        gcode = self._start_op()
+        if len(self.holes) > 0:
+            for h in self.holes:
+                gcode.append('G0 X%.4f Y%.4f' % (h[0], h[1]))
+                gcode.append('G0 Z%.4f' % (self.z_start + self.retract))
+                gcode.append('M0')
+                if self.retract_mode == 'G98':
+                    gcode.append('G0 Z%.4f' % self.z_clear)
+
+        gcode.extend(self._end_op())
+        return gcode
+
     def drill(self):
         return self._create_gcode('%s G81 R%.4f Z%.4f F%.4f' %
                                   (self.retract_mode, self.z_start + self.retract, self.z_end, self.z_feed))
