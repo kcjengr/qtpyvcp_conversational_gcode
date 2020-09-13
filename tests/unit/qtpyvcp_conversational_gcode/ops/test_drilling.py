@@ -16,7 +16,7 @@ class TestDrilling(unittest.TestCase):
         cls.sut.z_start = 1
         cls.sut.z_end = 0.5
         cls.sut.z_feed = 4.8
-        cls.sut.z_clear = 0.2
+        cls.sut.z_clear = 1.2
         cls.sut.xy_feed = 60
 
     def test_should_drill_a_hole_at_the_given_location(self):
@@ -28,10 +28,10 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G0 X4.0000 Y1.0000',
-            'G0 Z0.2000',
+            'G0 Z1.2000',
             'G98 G81 R1.0200 Z0.5000 F4.8000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.holes.append((4., 1.))
@@ -47,10 +47,10 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G0 X4.0000 Y1.0000',
-            'G0 Z0.2000',
+            'G0 Z1.2000',
             'G99 G81 R1.0200 Z0.5000 F4.8000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.retract_mode = 'G99'
@@ -69,12 +69,12 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G0 X4.0000 Y1.0000',
-            'G0 Z0.2000',
+            'G0 Z1.2000',
             'G98 G81 R1.0200 Z0.5000 F4.8000',
             'X2.0000 Y0.0000',
             'X3.2000 Y-10.0100',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.holes.append((4., 1.))
@@ -91,7 +91,7 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.units = 'in'
@@ -106,7 +106,7 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.units = 'mm'
@@ -123,7 +123,7 @@ class TestDrilling(unittest.TestCase):
             'M7',
             'G80',
             'M9',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.coolant = 'mist'
@@ -140,7 +140,7 @@ class TestDrilling(unittest.TestCase):
             'M8',
             'G80',
             'M9',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.coolant = 'flood'
@@ -155,7 +155,7 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.spindle_dir = 'ccw'
@@ -170,10 +170,10 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G0 X4.0000 Y1.0000',
-            'G0 Z0.2000',
+            'G0 Z1.2000',
             'G98 G82 R1.0200 Z0.5000 P0.5000 F4.8000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.holes.append((4., 1.))
@@ -188,10 +188,10 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G0 X4.0000 Y1.0000',
-            'G0 Z0.2000',
+            'G0 Z1.2000',
             'G98 G83 R1.0200 Z0.5000 Q0.1000 F4.8000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.holes.append((4., 1.))
@@ -206,10 +206,10 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G0 X4.0000 Y1.0000',
-            'G0 Z0.2000',
+            'G0 Z1.2000',
             'G98 G73 R1.0200 Z0.5000 Q0.0500 F4.8000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.holes.append((4., 1.))
@@ -224,10 +224,10 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G0 X4.0000 Y1.0000',
-            'G0 Z0.2000',
+            'G0 Z1.2000',
             'G98 G84 R1.0200 Z0.5000 F6.0000 S120.0000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.spindle_rpm = 120
@@ -243,10 +243,10 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G0 X4.0000 Y1.0000',
-            'G0 Z0.2000',
+            'G0 Z1.2000',
             'G98 G74 R1.0200 Z0.5000 F6.0000 S120.0000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.spindle_rpm = 120
@@ -263,10 +263,10 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G0 X4.0000 Y1.0000',
-            'G0 Z0.2000',
+            'G0 Z1.2000',
             'G33.1 Z0.5000 K0.3125',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.spindle_rpm = 120
@@ -282,16 +282,78 @@ class TestDrilling(unittest.TestCase):
             'G55',
             'F60.0000',
             'G0 X0.0000 Y-4.0000',
-            'G0 Z0.2000',
+            'G0 Z1.2000',
             'G98 G81 R1.0200 Z0.5000 F4.8000',
             'X4.0000 Y0.0000',
             'X0.0000 Y4.0000',
             'X-4.0000 Y0.0000',
             'G80',
-            'G0 Z0.2000'
+            'G0 Z1.2000'
         ]
 
         self.sut.add_hole_circle(4, 8, (0, 0), -90)
         self.assertEqual(expected_gcode, self.sut.drill())
 
+    def test_should_pause_program_at_each_hole_location_for_manual_drilling(self):
+        expected_gcode = [
+            'G21',
+            'T4 M6 G43',
+            'S1200.0000',
+            'M3',
+            'G55',
+            'F60.0000',
+            'G0 X0.0000 Y0.0000',
+            'G0 Z1.0200',
+            'M0',
+            'G0 Z1.2000',
+            'G0 X0.0000 Y1.0000',
+            'G0 Z1.0200',
+            'M0',
+            'G0 Z1.2000',
+            'G0 X1.0000 Y1.0000',
+            'G0 Z1.0200',
+            'M0',
+            'G0 Z1.2000',
+            'G0 X1.0000 Y0.0000',
+            'G0 Z1.0200',
+            'M0',
+            'G0 Z1.2000',
+            'G0 Z1.2000',
+        ]
 
+        self.sut.holes.append((0, 0))
+        self.sut.holes.append((0, 1))
+        self.sut.holes.append((1, 1))
+        self.sut.holes.append((1, 0))
+        self.assertEqual(expected_gcode, self.sut.manual())
+
+    def test_should_stay_at_retract_height_when_manual_and_retract_mode_is_g99(self):
+        expected_gcode = [
+            'G21',
+            'T4 M6 G43',
+            'S1200.0000',
+            'M3',
+            'G55',
+            'F60.0000',
+            'G0 X0.0000 Y0.0000',
+            'G0 Z1.0200',
+            'M0',
+            'G0 X0.0000 Y1.0000',
+            'G0 Z1.0200',
+            'M0',
+            'G0 X1.0000 Y1.0000',
+            'G0 Z1.0200',
+            'M0',
+            'G0 X1.0000 Y0.0000',
+            'G0 Z1.0200',
+            'M0',
+            'G0 Z1.2000',
+        ]
+
+        self.sut.holes.append((0, 0))
+        self.sut.holes.append((0, 1))
+        self.sut.holes.append((1, 1))
+        self.sut.holes.append((1, 0))
+        self.sut.retract_mode = 'G99'
+
+        self.assertEqual(expected_gcode, self.sut.manual())
