@@ -2,8 +2,10 @@ from qtpy.QtCore import Property
 from qtpy.QtGui import QDoubleValidator
 from qtpy.QtWidgets import QLineEdit
 
+from qtpyvcp.widgets.input_widgets.line_edit import VCPLineEdit
 
-class FloatLineEdit(QLineEdit):
+
+class FloatLineEdit(VCPLineEdit):
     def __init__(self, parent=None):
         super(FloatLineEdit, self).__init__(parent)
         self._default_value = 0.

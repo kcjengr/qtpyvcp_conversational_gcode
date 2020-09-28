@@ -2,8 +2,10 @@ from qtpy.QtGui import QIntValidator
 from qtpy.QtCore import Property
 from qtpy.QtWidgets import QLineEdit
 
+from qtpyvcp.widgets.input_widgets.line_edit import VCPLineEdit
 
-class IntLineEdit(QLineEdit):
+
+class IntLineEdit(VCPLineEdit):
     def __init__(self, parent=None):
         super(IntLineEdit, self).__init__(parent)
         self._default_value = 0
