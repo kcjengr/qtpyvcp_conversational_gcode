@@ -1052,13 +1052,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1098,13 +1098,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1144,13 +1144,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1190,13 +1190,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1224,13 +1224,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1249,13 +1249,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1283,13 +1283,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1329,13 +1329,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1375,13 +1375,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1421,13 +1421,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1455,13 +1455,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1501,13 +1501,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1535,13 +1535,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1560,13 +1560,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1585,13 +1585,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1610,13 +1610,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1656,13 +1656,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1702,13 +1702,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1736,13 +1736,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1761,13 +1761,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1798,13 +1798,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1844,13 +1844,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>120</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1889,14 +1889,14 @@ color: rgb(255, 255, 255);
               </property>
               <property name="minimumSize">
                <size>
-                <width>90</width>
-                <height>31</height>
+                <width>115</width>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>16777215</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -1936,13 +1936,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>100</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -1960,14 +1960,14 @@ color: rgb(255, 255, 255);
               </property>
               <property name="minimumSize">
                <size>
-                <width>120</width>
-                <height>31</height>
+                <width>115</width>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>16777215</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="font">
@@ -2001,13 +2001,13 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>0</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
                 <width>16777215</width>
-                <height>33</height>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
@@ -2029,17 +2029,18 @@ color: rgb(255, 255, 255);
               <property name="minimumSize">
                <size>
                 <width>115</width>
-                <height>31</height>
+                <height>35</height>
                </size>
               </property>
               <property name="maximumSize">
                <size>
-                <width>115</width>
-                <height>31</height>
+                <width>16777215</width>
+                <height>35</height>
                </size>
               </property>
               <property name="styleSheet">
-               <string notr="true"/>
+               <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
+</string>
               </property>
               <property name="lineWidth">
                <number>0</number>
@@ -2082,13 +2083,18 @@ color: rgb(255, 255, 255);
  <customwidgets>
   <customwidget>
    <class>IntLineEdit</class>
-   <extends>QLineEdit</extends>
+   <extends>VCPLineEdit</extends>
    <header>qtpyvcp_conversational_gcode.widgets.int_line_edit</header>
   </customwidget>
   <customwidget>
    <class>FloatLineEdit</class>
-   <extends>QLineEdit</extends>
+   <extends>VCPLineEdit</extends>
    <header>qtpyvcp_conversational_gcode.widgets.float_line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.line_edit</header>
   </customwidget>
  </customwidgets>
  <resources/>
