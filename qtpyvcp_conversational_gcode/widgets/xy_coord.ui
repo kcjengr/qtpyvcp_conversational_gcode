@@ -1507,13 +1507,18 @@ color: rgb(255, 255, 255);
  <customwidgets>
   <customwidget>
    <class>IntLineEdit</class>
-   <extends>QLineEdit</extends>
+   <extends>VCPLineEdit</extends>
    <header>qtpyvcp_conversational_gcode.widgets.int_line_edit</header>
   </customwidget>
   <customwidget>
    <class>FloatLineEdit</class>
-   <extends>QLineEdit</extends>
+   <extends>VCPLineEdit</extends>
    <header>qtpyvcp_conversational_gcode.widgets.float_line_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.line_edit</header>
   </customwidget>
  </customwidgets>
  <tabstops>
