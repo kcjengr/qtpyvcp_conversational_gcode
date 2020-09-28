@@ -9,7 +9,7 @@ class FloatLineEdit(VCPLineEdit):
     def __init__(self, parent=None):
         super(FloatLineEdit, self).__init__(parent)
         self._default_value = 0.
-        self._format_string = '%.3f'
+        self._format_string = "{0:.3f}"
         self.setValidator(QDoubleValidator())
         self.validator().setNotation(QDoubleValidator.StandardNotation)
 
@@ -40,6 +40,6 @@ class FloatLineEdit(VCPLineEdit):
         try:
             float(self.text())
         except ValueError:
-            self.setText(self._format_string % self._default_value)
+            self.setText(self._format_string.format(self._default_value))
 
         super(FloatLineEdit, self).focusOutEvent(evt)

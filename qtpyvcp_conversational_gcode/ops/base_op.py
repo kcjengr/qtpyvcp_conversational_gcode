@@ -24,11 +24,11 @@ class BaseGenerator(object):
     def _start_op(self):
         gcode = [
             'G20' if self.units.lower() == 'in' else 'G21',
-            'T%i M6 G43' % self.tool_number,
-            'S%.4f' % self.spindle_rpm,
+            'T{:d} M6 G43'.format(self.tool_number),
+            'S{:.4f}'.format(self.spindle_rpm),
             'M4' if self.spindle_dir.lower() == 'ccw' else 'M3',
             self.wcs,
-            'F%.4f' % self.xy_feed
+            'F{:.4f}'.format(self.xy_feed)
         ]
 
         if self.coolant.lower() == 'mist':
@@ -42,5 +42,5 @@ class BaseGenerator(object):
         gcode = []
         if self.coolant.strip() != '':
             gcode.append('M9')
-        gcode.append('G0 Z%.4f' % self.z_clear)
+        gcode.append('G0 Z{:.4f}'.format(self.z_clear))
         return gcode

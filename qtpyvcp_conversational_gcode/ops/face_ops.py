@@ -36,32 +36,32 @@ class FaceOps(BaseGenerator):
         for i in xrange(num_step_down):
             x = self.x_end
             y = y_start
-            gcode.append('G0 X%.4f Y%.4f' % (x_start, y_start))
-            gcode.append('G0 Z%.4f' % (z + self.retract))
-            gcode.append('G18 G2 X%.4f Z%.4f I%.4f' %
-                         (x_start + ramp_radius, z + self.retract - ramp_radius, ramp_radius))
+            gcode.append('G0 X{:.4f} Y{:.4f}'.format(x_start, y_start))
+            gcode.append('G0 Z{:.4f}'.format(z + self.retract))
+            gcode.append('G18 G2 X{:.4f} Z{:.4f} I{:.4f}'
+                         .format(x_start + ramp_radius, z + self.retract - ramp_radius, ramp_radius))
 
             z -= step_down
 
-            gcode.append('G1 X%.4f' % x)
+            gcode.append('G1 X{:.4f}'.format(x))
             for _ in xrange(num_step_over - 1):
                 y += step_over
                 if x == self.x_end:
-                    gcode.append('G17 G2 Y%.4f J%.4f' % (y, step_over / 2))
+                    gcode.append('G17 G2 Y{:.4f} J{:.4f}'.format(y, step_over / 2))
                     x = self.x_start
                 else:
-                    gcode.append('G17 G3 Y%.4f J%.4f' % (y, step_over / 2))
+                    gcode.append('G17 G3 Y{:.4f} J{:.4f}'.format(y, step_over / 2))
                     x = self.x_end
 
-                gcode.append('G1 X%.4f' % x)
+                gcode.append('G1 X{:.4f}'.format(x))
 
             if x == self.x_start:
-                gcode.append('G18 G3 X%.4f Z%.4f K%.4f' % (x - ramp_radius, z + ramp_radius, ramp_radius))
+                gcode.append('G18 G3 X{:.4f} Z{:.4f} K{:.4f}'.format(x - ramp_radius, z + ramp_radius, ramp_radius))
             else:
-                gcode.append('G18 G2 X%.4f Z%.4f K%.4f' % (x + ramp_radius, z + ramp_radius, ramp_radius))
+                gcode.append('G18 G2 X{:.4f} Z{:.4f} K{:.4f}'.format(x + ramp_radius, z + ramp_radius, ramp_radius))
 
             if i < (num_step_down - 1):
-                gcode.append('G0 Z%.4f' % self.z_clear)
+                gcode.append('G0 Z{:.4f}'.format(self.z_clear))
 
         gcode.extend(self._end_op())
 

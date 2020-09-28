@@ -27,5 +27,5 @@ class IntLineEdit(VCPLineEdit):
         return int(self.text())
 
     def focusOutEvent(self, evt):
-        self.setText('%i' % (self.value() if self.text() else self._default_value))
+        self.setText('{:d}'.format(self.value() if self.text() else self._default_value))
         super(IntLineEdit, self).focusOutEvent(evt)
