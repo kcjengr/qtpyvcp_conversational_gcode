@@ -48,18 +48,18 @@ class PocketWidget(QQuickWidget):
 
         # self.tool_image = self.dm.getData('tool-touch-off.tool-image-table') or dict()
 
-    @Slot(str)
+    @Slot(float)
     def safeZSig(self, safe_z):
-        self.setSafeZSig.emit(float(safe_z))
+        self.setSafeZSig.emit(safe_z)
 
-    @Slot(str)
-    def partZeroSigSig(self, part_zero):
-        self.setPartZeroSig.emit(float(part_zero))
+    @Slot(float)
+    def partZeroSig(self, part_zero):
+        self.setPartZeroSig.emit(part_zero)
 
-    @Slot(str)
-    def stepDownSigSig(self, step_down):
-        self.setStepDownSig.emit(float(step_down))
+    @Slot(float)
+    def stepDownSig(self, step_down):
+        self.setStepDownSig.emit(step_down)
 
-    @Slot(str)
-    def finishZSigSig(self, finish_z):
-        self.setFinishZSig.emit(float(finish_z))
+    @Slot(float)
+    def finishZSig(self, finish_z):
+        self.setFinishZSig.emit(finish_z)

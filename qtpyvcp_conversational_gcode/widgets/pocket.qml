@@ -40,6 +40,7 @@ Rectangle {
             property real py: height/2 + 20
             property real alpha: 1.0
 
+            signal propertyChanged
             x: 0
             y: 0
             antialiasing: true
@@ -61,8 +62,8 @@ Rectangle {
 
                 ctx.moveTo(10, 10);
                 ctx.lineTo(100, 10);
-                ctx.lineTo(100, canvas.finish_z);
-                ctx.lineTo(300, canvas.finish_z);
+                ctx.lineTo(100, canvas.finishZ);
+                ctx.lineTo(300, canvas.finishZ);
                 ctx.lineTo(300, 10);
                 ctx.lineTo(410, 10);
                 ctx.lineTo(410, 120);
