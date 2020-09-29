@@ -95,40 +95,43 @@ class DrillOps(BaseGenerator):
         gcode = self._start_op()
         if len(self.holes) > 0:
             for h in self.holes:
-                gcode.append('G0 X%.4f Y%.4f' % (h[0], h[1]))
-                gcode.append('G0 Z%.4f' % (self.z_start + self.retract))
+                gcode.append('G0 X{:.4f} Y{:.4f}'.format(h[0], h[1]))
+                gcode.append('G0 Z{:.4f}'.format(self.z_start + self.retract))
                 gcode.append('M0')
                 if self.retract_mode == 'G98':
-                    gcode.append('G0 Z%.4f' % self.z_clear)
+                    gcode.append('G0 Z{:.4f}'.format(self.z_clear))
 
         gcode.extend(self._end_op())
         return gcode
 
     def drill(self):
-        return self._create_gcode('%s G81 R%.4f Z%.4f F%.4f' %
-                                  (self.retract_mode, self.z_start + self.retract, self.z_end, self.z_feed))
+        return self._create_gcode('{} G81 R{:.4f} Z{:.4f} F{:.4f}'
+                                  .format(self.retract_mode, self.z_start + self.retract, self.z_end, self.z_feed))
 
     def dwell(self, dwell_time=0.):
-        return self._create_gcode('%s G82 R%.4f Z%.4f P%.4f F%.4f' %
-                                  (self.retract_mode, self.z_start + self.retract, self.z_end, dwell_time, self.z_feed))
+        return self._create_gcode('{} G82 R{:.4f} Z{:.4f} P{:.4f} F{:.4f}'
+                                  .format(self.retract_mode, self.z_start + self.retract, self.z_end, dwell_time,
+                                          self.z_feed))
 
     def peck(self, peck_dist=0.1):
-        return self._create_gcode('%s G83 R%.4f Z%.4f Q%.4f F%.4f' %
-                                  (self.retract_mode, self.z_start + self.retract, self.z_end, peck_dist, self.z_feed))
+        return self._create_gcode('{} G83 R{:.4f} Z{:.4f} Q{:.4f} F{:.4f}'
+                                  .format(self.retract_mode, self.z_start + self.retract, self.z_end, peck_dist,
+                                          self.z_feed))
 
     def chip_break(self, break_dist=0.1):
-        return self._create_gcode('%s G73 R%.4f Z%.4f Q%.4f F%.4f' %
-                                   (self.retract_mode, self.z_start + self.retract, self.z_end, break_dist, self.z_feed))
+        return self._create_gcode('{} G73 R{:.4f} Z{:.4f} Q{:.4f} F{:.4f}'
+                                  .format(self.retract_mode, self.z_start + self.retract, self.z_end, break_dist,
+                                          self.z_feed))
 
     def tap(self, pitch):
         feed = abs(self.spindle_rpm * pitch)
-        return self._create_gcode('%s %s R%.4f Z%.4f F%.4f S%.4f' %
-                                  (self.retract_mode, 'G74' if self.spindle_dir.lower() == 'ccw' else 'G84',
-                                   self.z_start + self.retract,
-                                   self.z_end, feed, abs(self.spindle_rpm)))
+        return self._create_gcode('{} {} R{:.4f} Z{:.4f} F{:.4f} S{:.4f}'
+                                  .format(self.retract_mode, 'G74' if self.spindle_dir.lower() == 'ccw' else 'G84',
+                                          self.z_start + self.retract,
+                                          self.z_end, feed, abs(self.spindle_rpm)))
 
     def rigid_tap(self, pitch):
-        return self._create_gcode('G33.1 Z%.4f K%.4f' % (self.z_end, pitch))
+        return self._create_gcode('G33.1 Z{:.4f} K{:.4f}'.format(self.z_end, pitch))
 
     def add_hole_circle(self, num_holes, circle_diam, circle_center, start_angle=0):
         if num_holes == 0:
@@ -150,11 +153,11 @@ class DrillOps(BaseGenerator):
     def _create_gcode(self, op):
         gcode = self._start_op()
         if len(self.holes) > 0:
-            gcode.append('G0 X%.4f Y%.4f' % (self.holes[0][0], self.holes[0][1]))
-            gcode.append('G0 Z%.4f' % self.z_clear)
+            gcode.append('G0 X{:.4f} Y{:.4f}'.format(self.holes[0][0], self.holes[0][1]))
+            gcode.append('G0 Z{:.4f}'.format(self.z_clear))
             gcode.append(op)
             for h in self.holes[1:]:
-                gcode.append('X%.4f Y%.4f' % (h[0], h[1]))
+                gcode.append('X{:.4f} Y{:.4f}'.format(h[0], h[1]))
 
         gcode.append('G80')
         gcode.extend(self._end_op())

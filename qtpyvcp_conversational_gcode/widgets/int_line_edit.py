@@ -2,8 +2,10 @@ from qtpy.QtGui import QIntValidator
 from qtpy.QtCore import Property
 from qtpy.QtWidgets import QLineEdit
 
+from qtpyvcp.widgets.input_widgets.line_edit import VCPLineEdit
 
-class IntLineEdit(QLineEdit):
+
+class IntLineEdit(VCPLineEdit):
     def __init__(self, parent=None):
         super(IntLineEdit, self).__init__(parent)
         self._default_value = 0
@@ -25,5 +27,5 @@ class IntLineEdit(QLineEdit):
         return int(self.text())
 
     def focusOutEvent(self, evt):
-        self.setText('%i' % (self.value() if self.text() else self._default_value))
+        self.setText('{:d}'.format(self.value() if self.text() else self._default_value))
         super(IntLineEdit, self).focusOutEvent(evt)

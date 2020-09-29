@@ -190,7 +190,7 @@ class ConversationalBaseWidget(QWidget):
 
         i = 1
         while os.path.exists(program_path):
-            program_path = '%s_%i.ngc' % (program_base, i)
+            program_path = '{}_{:d}.ngc'.format(program_base, i)
             i += 1
 
         return program_path
