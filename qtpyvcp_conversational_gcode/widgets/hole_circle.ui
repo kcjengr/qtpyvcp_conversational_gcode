@@ -939,7 +939,7 @@ color: rgb(255, 255, 255);
          <property name="geometry">
           <rect>
            <x>26</x>
-           <y>487</y>
+           <y>484</y>
            <width>140</width>
            <height>50</height>
           </rect>
@@ -1106,13 +1106,13 @@ color: rgb(255, 255, 255);
         <property name="minimumSize">
          <size>
           <width>500</width>
-          <height>500</height>
+          <height>490</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
           <width>500</width>
-          <height>550</height>
+          <height>540</height>
          </size>
         </property>
         <property name="frameShape">
@@ -1123,16 +1123,16 @@ color: rgb(255, 255, 255);
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
          <property name="leftMargin">
-          <number>15</number>
+          <number>9</number>
          </property>
          <property name="topMargin">
-          <number>15</number>
+          <number>9</number>
          </property>
          <property name="rightMargin">
-          <number>15</number>
+          <number>9</number>
          </property>
          <property name="bottomMargin">
-          <number>15</number>
+          <number>9</number>
          </property>
          <item>
           <widget class="QWidget" name="widget" native="true">
