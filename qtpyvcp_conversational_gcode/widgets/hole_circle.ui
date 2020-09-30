@@ -18,7 +18,7 @@
   </property>
   <property name="maximumSize">
    <size>
-    <width>1420</width>
+    <width>1438</width>
     <height>580</height>
    </size>
   </property>
@@ -43,13 +43,13 @@ color: rgb(255, 255, 255);
      <property name="minimumSize">
       <size>
        <width>1420</width>
-       <height>585</height>
+       <height>550</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>1420</width>
-       <height>585</height>
+       <height>580</height>
       </size>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -70,13 +70,13 @@ color: rgb(255, 255, 255);
         <property name="minimumSize">
          <size>
           <width>820</width>
-          <height>560</height>
+          <height>550</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
           <width>820</width>
-          <height>560</height>
+          <height>550</height>
          </size>
         </property>
         <property name="styleSheet">
@@ -86,9 +86,9 @@ color: rgb(255, 255, 255);
          <property name="geometry">
           <rect>
            <x>41</x>
-           <y>182</y>
+           <y>189</y>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -100,13 +100,13 @@ color: rgb(255, 255, 255);
          <property name="minimumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -121,10 +121,16 @@ color: rgb(255, 255, 255);
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_191">
           <property name="leftMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
           </property>
           <item>
            <widget class="QLabel" name="label_138">
@@ -199,10 +205,10 @@ color: rgb(255, 255, 255);
         <widget class="QFrame" name="frame_25">
          <property name="geometry">
           <rect>
-           <x>568</x>
-           <y>24</y>
+           <x>556</x>
+           <y>27</y>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -214,13 +220,13 @@ color: rgb(255, 255, 255);
          <property name="minimumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>140</width>
-           <height>60</height>
+           <height>50</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -235,10 +241,16 @@ color: rgb(255, 255, 255);
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_193">
           <property name="leftMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
           </property>
           <item>
            <widget class="QLabel" name="label_139">
@@ -314,10 +326,10 @@ Holes</string>
         <widget class="QFrame" name="frame_42">
          <property name="geometry">
           <rect>
-           <x>644</x>
-           <y>146</y>
+           <x>632</x>
+           <y>149</y>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -329,13 +341,13 @@ Holes</string>
          <property name="minimumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>140</width>
-           <height>60</height>
+           <height>50</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -350,10 +362,16 @@ Holes</string>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_195">
           <property name="leftMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
           </property>
           <item>
            <widget class="QLabel" name="label_140">
@@ -435,10 +453,10 @@ ANGLE</string>
         <widget class="QFrame" name="frame_46">
          <property name="geometry">
           <rect>
-           <x>616</x>
+           <x>604</x>
            <y>303</y>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -450,13 +468,13 @@ ANGLE</string>
          <property name="minimumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -471,10 +489,16 @@ ANGLE</string>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_199">
           <property name="leftMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
           </property>
           <item>
            <widget class="QLabel" name="label_141">
@@ -552,10 +576,10 @@ color: rgb(255, 255, 255);
         <widget class="QFrame" name="frame_47">
          <property name="geometry">
           <rect>
-           <x>616</x>
+           <x>604</x>
            <y>360</y>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -567,13 +591,13 @@ color: rgb(255, 255, 255);
          <property name="minimumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -588,10 +612,16 @@ color: rgb(255, 255, 255);
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_201">
           <property name="leftMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
           </property>
           <item>
            <widget class="QLabel" name="label_142">
@@ -674,10 +704,10 @@ color: rgb(255, 255, 255);
         <widget class="QFrame" name="frame_55">
          <property name="geometry">
           <rect>
-           <x>630</x>
-           <y>474</y>
+           <x>618</x>
+           <y>471</y>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -689,13 +719,13 @@ color: rgb(255, 255, 255);
          <property name="minimumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -710,10 +740,16 @@ color: rgb(255, 255, 255);
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_207">
           <property name="leftMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
           </property>
           <item>
            <widget class="QLabel" name="label_147">
@@ -785,10 +821,10 @@ color: rgb(255, 255, 255);
         <widget class="QFrame" name="frame_56">
          <property name="geometry">
           <rect>
-           <x>23</x>
-           <y>412</y>
+           <x>26</x>
+           <y>413</y>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -800,13 +836,13 @@ color: rgb(255, 255, 255);
          <property name="minimumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -821,10 +857,16 @@ color: rgb(255, 255, 255);
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_209">
           <property name="leftMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
           </property>
           <item>
            <widget class="QLabel" name="label_151">
@@ -896,10 +938,10 @@ color: rgb(255, 255, 255);
         <widget class="QFrame" name="frame_57">
          <property name="geometry">
           <rect>
-           <x>23</x>
-           <y>486</y>
+           <x>26</x>
+           <y>487</y>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -911,13 +953,13 @@ color: rgb(255, 255, 255);
          <property name="minimumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>140</width>
-           <height>55</height>
+           <height>50</height>
           </size>
          </property>
          <property name="styleSheet">
@@ -932,10 +974,16 @@ color: rgb(255, 255, 255);
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_211">
           <property name="leftMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="topMargin">
+           <number>2</number>
           </property>
           <property name="rightMargin">
-           <number>5</number>
+           <number>2</number>
+          </property>
+          <property name="bottomMargin">
+           <number>2</number>
           </property>
           <item>
            <widget class="QLabel" name="label_152">
@@ -1050,7 +1098,7 @@ color: rgb(255, 255, 255);
       <item>
        <widget class="QFrame" name="bolt_hole_setup_frame_3">
         <property name="sizePolicy">
-         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
           <horstretch>0</horstretch>
           <verstretch>0</verstretch>
          </sizepolicy>
@@ -1058,7 +1106,7 @@ color: rgb(255, 255, 255);
         <property name="minimumSize">
          <size>
           <width>500</width>
-          <height>550</height>
+          <height>500</height>
          </size>
         </property>
         <property name="maximumSize">
