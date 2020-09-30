@@ -240,28 +240,46 @@ QTableView {
            </layout>
           </widget>
          </item>
-         <item>
+         <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
           <widget class="QWidget" name="widget" native="true">
            <property name="minimumSize">
             <size>
-             <width>0</width>
+             <width>820</width>
              <height>150</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>16777215</width>
+             <width>800</width>
              <height>150</height>
             </size>
            </property>
            <widget class="QLabel" name="label">
             <property name="geometry">
              <rect>
-              <x>22</x>
-              <y>0</y>
-              <width>800</width>
+              <x>124</x>
+              <y>4</y>
+              <width>555</width>
               <height>140</height>
              </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>555</width>
+              <height>140</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>555</width>
+              <height>140</height>
+             </size>
             </property>
             <property name="text">
              <string/>
@@ -276,8 +294,8 @@ QTableView {
            <widget class="QFrame" name="frame_55">
             <property name="geometry">
              <rect>
-              <x>692</x>
-              <y>59</y>
+              <x>670</x>
+              <y>58</y>
               <width>140</width>
               <height>45</height>
              </rect>
@@ -410,7 +428,7 @@ color: rgb(255, 255, 255);
            <widget class="QFrame" name="frame_57">
             <property name="geometry">
              <rect>
-              <x>24</x>
+              <x>8</x>
               <y>92</y>
               <width>140</width>
               <height>45</height>
@@ -544,7 +562,7 @@ color: rgb(255, 255, 255);
            <widget class="QFrame" name="frame_56">
             <property name="geometry">
              <rect>
-              <x>24</x>
+              <x>8</x>
               <y>20</y>
               <width>140</width>
               <height>45</height>

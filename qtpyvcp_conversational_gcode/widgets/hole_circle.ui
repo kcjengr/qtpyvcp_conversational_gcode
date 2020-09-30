@@ -1106,13 +1106,13 @@ color: rgb(255, 255, 255);
         <property name="minimumSize">
          <size>
           <width>500</width>
-          <height>490</height>
+          <height>525</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
           <width>500</width>
-          <height>540</height>
+          <height>525</height>
          </size>
         </property>
         <property name="frameShape">
