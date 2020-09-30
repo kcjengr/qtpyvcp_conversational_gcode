@@ -50,6 +50,18 @@ color: rgb(255, 255, 255);
       <property name="spacing">
        <number>30</number>
       </property>
+      <property name="leftMargin">
+       <number>6</number>
+      </property>
+      <property name="topMargin">
+       <number>6</number>
+      </property>
+      <property name="rightMargin">
+       <number>6</number>
+      </property>
+      <property name="bottomMargin">
+       <number>6</number>
+      </property>
       <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
        <widget class="QWidget" name="widget" native="true">
         <property name="sizePolicy">
@@ -61,13 +73,13 @@ color: rgb(255, 255, 255);
         <property name="minimumSize">
          <size>
           <width>0</width>
-          <height>540</height>
+          <height>530</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
           <width>16777215</width>
-          <height>565</height>
+          <height>550</height>
          </size>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout">
