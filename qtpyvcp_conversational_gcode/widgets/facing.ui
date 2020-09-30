@@ -37,13 +37,13 @@ color: rgb(255, 255, 255);
      <property name="minimumSize">
       <size>
        <width>1420</width>
-       <height>585</height>
+       <height>500</height>
       </size>
      </property>
      <property name="maximumSize">
       <size>
        <width>1420</width>
-       <height>585</height>
+       <height>580</height>
       </size>
      </property>
      <property name="font">
@@ -53,17 +53,20 @@ color: rgb(255, 255, 255);
       </font>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="spacing">
+       <number>0</number>
+      </property>
       <property name="leftMargin">
        <number>3</number>
       </property>
       <property name="topMargin">
-       <number>3</number>
+       <number>0</number>
       </property>
       <property name="rightMargin">
        <number>3</number>
       </property>
       <property name="bottomMargin">
-       <number>3</number>
+       <number>6</number>
       </property>
       <item>
        <widget class="QWidget" name="bolt_hole_diagram_widget" native="true">
@@ -223,7 +226,7 @@ color: rgb(255, 255, 255);
          <property name="geometry">
           <rect>
            <x>659</x>
-           <y>435</y>
+           <y>426</y>
            <width>140</width>
            <height>45</height>
           </rect>
@@ -357,7 +360,7 @@ color: rgb(255, 255, 255);
          <property name="geometry">
           <rect>
            <x>23</x>
-           <y>446</y>
+           <y>423</y>
            <width>140</width>
            <height>45</height>
           </rect>
@@ -491,7 +494,7 @@ color: rgb(255, 255, 255);
          <property name="geometry">
           <rect>
            <x>23</x>
-           <y>503</y>
+           <y>480</y>
            <width>140</width>
            <height>45</height>
           </rect>
@@ -627,19 +630,19 @@ color: rgb(255, 255, 255);
            <x>0</x>
            <y>0</y>
            <width>820</width>
-           <height>560</height>
+           <height>540</height>
           </rect>
          </property>
          <property name="minimumSize">
           <size>
            <width>820</width>
-           <height>560</height>
+           <height>540</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>820</width>
-           <height>560</height>
+           <height>540</height>
           </size>
          </property>
          <property name="text">
@@ -655,7 +658,7 @@ color: rgb(255, 255, 255);
         <widget class="QFrame" name="frame_58">
          <property name="geometry">
           <rect>
-           <x>10</x>
+           <x>22</x>
            <y>60</y>
            <width>140</width>
            <height>45</height>
@@ -789,8 +792,8 @@ color: rgb(255, 255, 255);
         <widget class="QFrame" name="frame_59">
          <property name="geometry">
           <rect>
-           <x>10</x>
-           <y>3</y>
+           <x>22</x>
+           <y>7</y>
            <width>140</width>
            <height>45</height>
           </rect>
@@ -924,7 +927,7 @@ color: rgb(255, 255, 255);
          <property name="geometry">
           <rect>
            <x>638</x>
-           <y>377</y>
+           <y>368</y>
            <width>140</width>
            <height>45</height>
           </rect>
@@ -1058,7 +1061,7 @@ color: rgb(255, 255, 255);
          <property name="geometry">
           <rect>
            <x>643</x>
-           <y>9</y>
+           <y>10</y>
            <width>140</width>
            <height>45</height>
           </rect>
@@ -1192,7 +1195,7 @@ color: rgb(255, 255, 255);
          <property name="geometry">
           <rect>
            <x>24</x>
-           <y>371</y>
+           <y>365</y>
            <width>140</width>
            <height>45</height>
           </rect>
@@ -1345,13 +1348,13 @@ color: rgb(255, 255, 255);
         <property name="minimumSize">
          <size>
           <width>500</width>
-          <height>545</height>
+          <height>540</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
           <width>500</width>
-          <height>545</height>
+          <height>540</height>
          </size>
         </property>
         <property name="frameShape">
@@ -1365,13 +1368,13 @@ color: rgb(255, 255, 255);
           <number>15</number>
          </property>
          <property name="topMargin">
-          <number>15</number>
+          <number>10</number>
          </property>
          <property name="rightMargin">
           <number>15</number>
          </property>
          <property name="bottomMargin">
-          <number>15</number>
+          <number>10</number>
          </property>
          <item>
           <widget class="QWidget" name="widget" native="true">
