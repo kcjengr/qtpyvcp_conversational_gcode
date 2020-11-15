@@ -1,1 +1,2 @@
 graft *
+recursive-include qtpyvcp_conversational_gcode *.yml *.yaml *.ui *.qss *qrc *.qml *.png
