@@ -1,8 +1,8 @@
-from __future__ import division
+
 
 import math
 
-from base_op import BaseGenerator
+from .base_op import BaseGenerator
 
 
 class DrillOps(BaseGenerator):

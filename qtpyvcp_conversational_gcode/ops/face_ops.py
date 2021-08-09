@@ -1,7 +1,7 @@
-from __future__ import division
+
 import math
 
-from base_op import BaseGenerator
+from .base_op import BaseGenerator
 
 
 class FaceOps(BaseGenerator):
@@ -33,7 +33,7 @@ class FaceOps(BaseGenerator):
         z = z_start
         gcode = self._start_op()
         step_over = - step_over
-        for i in xrange(num_step_down):
+        for i in range(num_step_down):
             x = self.x_end
             y = y_start
             gcode.append('G0 X{:.4f} Y{:.4f}'.format(x_start, y_start))
@@ -44,7 +44,7 @@ class FaceOps(BaseGenerator):
             z -= step_down
 
             gcode.append('G1 X{:.4f}'.format(x))
-            for _ in xrange(num_step_over - 1):
+            for _ in range(num_step_over - 1):
                 y += step_over
                 if x == self.x_end:
                     gcode.append('G17 G2 Y{:.4f} J{:.4f}'.format(y, step_over / 2))

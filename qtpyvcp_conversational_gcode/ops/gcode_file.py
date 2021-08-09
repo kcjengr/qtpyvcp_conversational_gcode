@@ -28,7 +28,7 @@ class GCodeFile(object):
         output.extend(self.epilog)
 
         line_number = self.starting_line_number
-        for i in xrange(len(output)):
+        for i in range(len(output)):
             output[i] = 'N{:d} {}'.format(line_number, output[i])
             line_number += self.line_number_stride
 
