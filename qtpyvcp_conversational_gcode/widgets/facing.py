@@ -4,7 +4,7 @@ from qtpyvcp_conversational_gcode.widgets.base_widget import ConversationalBaseW
 
 class FacingWidget(ConversationalBaseWidget):
     def __init__(self, parent=None):
-        super(FacingWidget, self).__init__(parent, 'facing.ui')
+        super(FacingWidget, self).__init__(parent, 'facing_vertical.ui')
 
         self.step_down_input.editingFinished.connect(self._validate_step_down)
         self.step_over_input.editingFinished.connect(self._validate_step_over)
