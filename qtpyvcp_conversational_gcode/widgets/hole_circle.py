@@ -4,7 +4,7 @@ from qtpyvcp_conversational_gcode.widgets.drill_widget import DrillWidgetBase
 
 class HoleCircleWidget(DrillWidgetBase):
     def __init__(self, parent=None):
-        super(HoleCircleWidget, self).__init__(parent, 'hole_circle.ui')
+        super(HoleCircleWidget, self).__init__(parent, 'hole_circle_vertical.ui')
 
         self.diameter_input.editingFinished.connect(self._validate_diameter)
         self.num_holes_input.editingFinished.connect(self._validate_num_holes)

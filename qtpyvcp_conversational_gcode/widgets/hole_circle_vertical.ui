@@ -2,9 +2,17 @@
 <ui version="4.0">
  <class>Form</class>
  <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>725</width>
+    <height>1075</height>
+   </rect>
+  </property>
   <property name="sizePolicy">
    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-    <horstretch>1</horstretch>
+    <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
@@ -17,7 +25,7 @@ font: 75 13pt &quot;Bebas Kai&quot;;
 color: rgb(255, 255, 255);
 }</string>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout_3">
+  <layout class="QHBoxLayout" name="horizontalLayout_2">
    <property name="spacing">
     <number>0</number>
    </property>
@@ -52,14 +60,8 @@ color: rgb(255, 255, 255);
        <number>0</number>
       </property>
       <item>
-       <widget class="QWidget" name="widget" native="true">
-        <property name="font">
-         <font>
-          <family>BebasKai</family>
-          <pointsize>21</pointsize>
-         </font>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <widget class="QWidget" name="widget_4" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
          <property name="spacing">
           <number>0</number>
          </property>
@@ -77,16 +79,22 @@ color: rgb(255, 255, 255);
          </property>
          <item>
           <widget class="QWidget" name="bolt_hole_diagram_widget" native="true">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
            <property name="minimumSize">
             <size>
-             <width>742</width>
-             <height>535</height>
+             <width>725</width>
+             <height>550</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>742</width>
-             <height>535</height>
+             <width>725</width>
+             <height>550</height>
             </size>
            </property>
            <property name="styleSheet">
@@ -95,10 +103,10 @@ color: rgb(255, 255, 255);
            <widget class="QFrame" name="frame_24">
             <property name="geometry">
              <rect>
-              <x>21</x>
-              <y>154</y>
+              <x>3</x>
+              <y>186</y>
               <width>140</width>
-              <height>45</height>
+              <height>50</height>
              </rect>
             </property>
             <property name="sizePolicy">
@@ -106,6 +114,18 @@ color: rgb(255, 255, 255);
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
             </property>
             <property name="styleSheet">
              <string notr="true">.QFrame{
@@ -119,16 +139,16 @@ color: rgb(255, 255, 255);
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_191">
              <property name="leftMargin">
-              <number>3</number>
+              <number>2</number>
              </property>
              <property name="topMargin">
-              <number>1</number>
+              <number>2</number>
              </property>
              <property name="rightMargin">
-              <number>3</number>
+              <number>2</number>
              </property>
              <property name="bottomMargin">
-              <number>1</number>
+              <number>2</number>
              </property>
              <item>
               <widget class="QLabel" name="label_138">
@@ -157,7 +177,7 @@ color: rgb(255, 255, 255);
 }</string>
                </property>
                <property name="text">
-                <string>STEP OVER</string>
+                <string>DIAM</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -168,7 +188,7 @@ color: rgb(255, 255, 255);
               </widget>
              </item>
              <item>
-              <widget class="FloatLineEdit" name="step_over_input">
+              <widget class="FloatLineEdit" name="diameter_input">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                  <horstretch>70</horstretch>
@@ -181,35 +201,17 @@ color: rgb(255, 255, 255);
                  <height>33</height>
                 </size>
                </property>
-               <property name="font">
-                <font>
-                 <family>Bebas Kai</family>
-                 <pointsize>14</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="styleSheet">
-                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 5px;
-color: black;
-background: rgb(235, 235, 235);</string>
+                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                </property>
                <property name="text">
-                <string>0.0000</string>
+                <string>0.000</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                </property>
                <property name="default_value" stdset="0">
                 <double>0.000000000000000</double>
-               </property>
-               <property name="format_string" stdset="0">
-                <string>%.4f</string>
                </property>
                <property name="bottom" stdset="0">
                 <double>0.000000000000000</double>
@@ -218,13 +220,13 @@ background: rgb(235, 235, 235);</string>
              </item>
             </layout>
            </widget>
-           <widget class="QFrame" name="frame_55">
+           <widget class="QFrame" name="frame_25">
             <property name="geometry">
              <rect>
-              <x>599</x>
-              <y>425</y>
+              <x>525</x>
+              <y>32</y>
               <width>140</width>
-              <height>45</height>
+              <height>50</height>
              </rect>
             </property>
             <property name="sizePolicy">
@@ -232,6 +234,18 @@ background: rgb(235, 235, 235);</string>
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
             </property>
             <property name="styleSheet">
              <string notr="true">.QFrame{
@@ -243,24 +257,142 @@ background: rgb(235, 235, 235);</string>
 	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
 }</string>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_207">
-             <property name="spacing">
-              <number>3</number>
-             </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_193">
              <property name="leftMargin">
               <number>2</number>
              </property>
              <property name="topMargin">
-              <number>1</number>
+              <number>2</number>
              </property>
              <property name="rightMargin">
               <number>2</number>
              </property>
              <property name="bottomMargin">
-              <number>1</number>
+              <number>2</number>
              </property>
              <item>
-              <widget class="QLabel" name="label_147">
+              <widget class="QLabel" name="label_139">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+font: 75 13pt &quot;Bebas Kai&quot;;
+color: rgb(255, 255, 255);
+}</string>
+               </property>
+               <property name="text">
+                <string>Num
+Holes</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="IntLineEdit" name="num_holes_input">
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>70</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+               </property>
+               <property name="text">
+                <string>0</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+               <property name="default_value" stdset="0">
+                <number>0</number>
+               </property>
+               <property name="bottom" stdset="0">
+                <number>1</number>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QFrame" name="frame_42">
+            <property name="geometry">
+             <rect>
+              <x>583</x>
+              <y>146</y>
+              <width>140</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QFrame{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 6px;
+    color: rgb(238, 238, 236);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
+}</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_195">
+             <property name="leftMargin">
+              <number>2</number>
+             </property>
+             <property name="topMargin">
+              <number>2</number>
+             </property>
+             <property name="rightMargin">
+              <number>2</number>
+             </property>
+             <property name="bottomMargin">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_140">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                  <horstretch>0</horstretch>
@@ -286,7 +418,8 @@ color: rgb(255, 255, 255);
 }</string>
                </property>
                <property name="text">
-                <string>STEP DOWN</string>
+                <string>START
+ANGLE</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -297,12 +430,18 @@ color: rgb(255, 255, 255);
               </widget>
              </item>
              <item>
-              <widget class="FloatLineEdit" name="step_down_input">
+              <widget class="FloatLineEdit" name="start_angle_input">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                  <horstretch>70</horstretch>
                  <verstretch>33</verstretch>
                 </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>33</height>
+                </size>
                </property>
                <property name="maximumSize">
                 <size>
@@ -310,32 +449,17 @@ color: rgb(255, 255, 255);
                  <height>33</height>
                 </size>
                </property>
-               <property name="font">
-                <font>
-                 <family>Bebas Kai</family>
-                 <pointsize>14</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="styleSheet">
-                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 5px;
-color: black;
-background: rgb(235, 235, 235);</string>
+                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                </property>
                <property name="text">
-                <string>0.0000</string>
+                <string>0.000</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                </property>
                <property name="format_string" stdset="0">
-                <string>%.4f</string>
+                <string>%.2f</string>
                </property>
                <property name="bottom" stdset="0">
                 <double>-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000000000000</double>
@@ -344,13 +468,13 @@ background: rgb(235, 235, 235);</string>
              </item>
             </layout>
            </widget>
-           <widget class="QFrame" name="frame_56">
+           <widget class="QFrame" name="frame_46">
             <property name="geometry">
              <rect>
-              <x>1</x>
-              <y>432</y>
+              <x>564</x>
+              <y>298</y>
               <width>140</width>
-              <height>45</height>
+              <height>50</height>
              </rect>
             </property>
             <property name="sizePolicy">
@@ -358,6 +482,18 @@ background: rgb(235, 235, 235);</string>
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
             </property>
             <property name="styleSheet">
              <string notr="true">.QFrame{
@@ -369,24 +505,21 @@ background: rgb(235, 235, 235);</string>
 	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
 }</string>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_209">
-             <property name="spacing">
-              <number>3</number>
-             </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_199">
              <property name="leftMargin">
               <number>2</number>
              </property>
              <property name="topMargin">
-              <number>1</number>
+              <number>2</number>
              </property>
              <property name="rightMargin">
               <number>2</number>
              </property>
              <property name="bottomMargin">
-              <number>1</number>
+              <number>2</number>
              </property>
              <item>
-              <widget class="QLabel" name="label_151">
+              <widget class="QLabel" name="label_141">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                  <horstretch>0</horstretch>
@@ -412,7 +545,7 @@ color: rgb(255, 255, 255);
 }</string>
                </property>
                <property name="text">
-                <string>Z START</string>
+                <string>CENTER X</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -423,12 +556,18 @@ color: rgb(255, 255, 255);
               </widget>
              </item>
              <item>
-              <widget class="FloatLineEdit" name="z_start_input">
+              <widget class="FloatLineEdit" name="center_x_input">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                  <horstretch>70</horstretch>
                  <verstretch>33</verstretch>
                 </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>70</width>
+                 <height>33</height>
+                </size>
                </property>
                <property name="maximumSize">
                 <size>
@@ -436,32 +575,14 @@ color: rgb(255, 255, 255);
                  <height>33</height>
                 </size>
                </property>
-               <property name="font">
-                <font>
-                 <family>Bebas Kai</family>
-                 <pointsize>14</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="styleSheet">
-                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 5px;
-color: black;
-background: rgb(235, 235, 235);</string>
+                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                </property>
                <property name="text">
-                <string>0.0000</string>
+                <string>0.000</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-               <property name="format_string" stdset="0">
-                <string>%.4f</string>
                </property>
                <property name="bottom" stdset="0">
                 <double>-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000000000000</double>
@@ -470,13 +591,13 @@ background: rgb(235, 235, 235);</string>
              </item>
             </layout>
            </widget>
-           <widget class="QFrame" name="frame_57">
+           <widget class="QFrame" name="frame_47">
             <property name="geometry">
              <rect>
-              <x>10</x>
-              <y>489</y>
+              <x>564</x>
+              <y>349</y>
               <width>140</width>
-              <height>45</height>
+              <height>50</height>
              </rect>
             </property>
             <property name="sizePolicy">
@@ -484,6 +605,18 @@ background: rgb(235, 235, 235);</string>
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
             </property>
             <property name="styleSheet">
              <string notr="true">.QFrame{
@@ -495,24 +628,21 @@ background: rgb(235, 235, 235);</string>
 	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
 }</string>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_211">
-             <property name="spacing">
-              <number>3</number>
-             </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_201">
              <property name="leftMargin">
               <number>2</number>
              </property>
              <property name="topMargin">
-              <number>1</number>
+              <number>2</number>
              </property>
              <property name="rightMargin">
               <number>2</number>
              </property>
              <property name="bottomMargin">
-              <number>1</number>
+              <number>2</number>
              </property>
              <item>
-              <widget class="QLabel" name="label_152">
+              <widget class="QLabel" name="label_142">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                  <horstretch>0</horstretch>
@@ -538,7 +668,7 @@ color: rgb(255, 255, 255);
 }</string>
                </property>
                <property name="text">
-                <string>Z END</string>
+                <string>CENTER Y</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -549,7 +679,7 @@ color: rgb(255, 255, 255);
               </widget>
              </item>
              <item>
-              <widget class="FloatLineEdit" name="z_end_input">
+              <widget class="FloatLineEdit" name="center_y_input">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                  <horstretch>70</horstretch>
@@ -562,32 +692,14 @@ color: rgb(255, 255, 255);
                  <height>33</height>
                 </size>
                </property>
-               <property name="font">
-                <font>
-                 <family>Bebas Kai</family>
-                 <pointsize>14</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="styleSheet">
-                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 5px;
-color: black;
-background: rgb(235, 235, 235);</string>
+                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                </property>
                <property name="text">
-                <string>0.0000</string>
+                <string>0.000</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-               <property name="format_string" stdset="0">
-                <string>%.4f</string>
                </property>
                <property name="bottom" stdset="0">
                 <double>-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000000000000</double>
@@ -596,35 +708,24 @@ background: rgb(235, 235, 235);</string>
              </item>
             </layout>
            </widget>
-           <widget class="QLabel" name="label_2">
+           <widget class="QWidget" name="verticalLayoutWidget_2">
             <property name="geometry">
              <rect>
-              <x>126</x>
-              <y>33</y>
-              <width>500</width>
-              <height>491</height>
+              <x>1217</x>
+              <y>20</y>
+              <width>161</width>
+              <height>362</height>
              </rect>
             </property>
-            <property name="text">
-             <string/>
-            </property>
-            <property name="pixmap">
-             <pixmap>images/face_milling.png</pixmap>
-            </property>
-            <property name="scaledContents">
-             <bool>true</bool>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
-            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_59"/>
            </widget>
-           <widget class="QFrame" name="frame_58">
+           <widget class="QFrame" name="frame_55">
             <property name="geometry">
              <rect>
-              <x>7</x>
-              <y>56</y>
+              <x>582</x>
+              <y>460</y>
               <width>140</width>
-              <height>45</height>
+              <height>50</height>
              </rect>
             </property>
             <property name="sizePolicy">
@@ -632,6 +733,18 @@ background: rgb(235, 235, 235);</string>
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
             </property>
             <property name="styleSheet">
              <string notr="true">.QFrame{
@@ -643,273 +756,21 @@ background: rgb(235, 235, 235);</string>
 	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
 }</string>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_213">
-             <property name="leftMargin">
-              <number>3</number>
-             </property>
-             <property name="topMargin">
-              <number>1</number>
-             </property>
-             <property name="rightMargin">
-              <number>3</number>
-             </property>
-             <property name="bottomMargin">
-              <number>1</number>
-             </property>
-             <item>
-              <widget class="QLabel" name="label_153">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>50</width>
-                 <height>33</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>50</width>
-                 <height>33</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QLabel{
-font: 75 13pt &quot;Bebas Kai&quot;;
-color: rgb(255, 255, 255);
-}</string>
-               </property>
-               <property name="text">
-                <string>Y START</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-               <property name="wordWrap">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="FloatLineEdit" name="y_start_input">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                 <horstretch>70</horstretch>
-                 <verstretch>33</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>70</width>
-                 <height>33</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>Bebas Kai</family>
-                 <pointsize>14</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 5px;
-color: black;
-background: rgb(235, 235, 235);</string>
-               </property>
-               <property name="text">
-                <string>0.0000</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-               <property name="format_string" stdset="0">
-                <string>%.4f</string>
-               </property>
-               <property name="bottom" stdset="0">
-                <double>-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000000000000</double>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QFrame" name="frame_59">
-            <property name="geometry">
-             <rect>
-              <x>7</x>
-              <y>3</y>
-              <width>140</width>
-              <height>45</height>
-             </rect>
-            </property>
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">.QFrame{
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 6px;
-    color: rgb(238, 238, 236);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
-}</string>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_215">
-             <property name="spacing">
-              <number>3</number>
-             </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_207">
              <property name="leftMargin">
               <number>2</number>
              </property>
              <property name="topMargin">
-              <number>1</number>
+              <number>2</number>
              </property>
              <property name="rightMargin">
               <number>2</number>
              </property>
              <property name="bottomMargin">
-              <number>1</number>
-             </property>
-             <item>
-              <widget class="QLabel" name="label_154">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>50</width>
-                 <height>33</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>50</width>
-                 <height>33</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QLabel{
-font: 75 13pt &quot;Bebas Kai&quot;;
-color: rgb(255, 255, 255);
-}</string>
-               </property>
-               <property name="text">
-                <string>X START</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-               <property name="wordWrap">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="FloatLineEdit" name="x_start_input">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                 <horstretch>70</horstretch>
-                 <verstretch>33</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>70</width>
-                 <height>33</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>Bebas Kai</family>
-                 <pointsize>14</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 5px;
-color: black;
-background: rgb(235, 235, 235);</string>
-               </property>
-               <property name="text">
-                <string>0.0000</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-               <property name="format_string" stdset="0">
-                <string>%.4f</string>
-               </property>
-               <property name="bottom" stdset="0">
-                <double>-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000000000000</double>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QFrame" name="frame_60">
-            <property name="geometry">
-             <rect>
-              <x>581</x>
-              <y>374</y>
-              <width>140</width>
-              <height>45</height>
-             </rect>
-            </property>
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">.QFrame{
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 6px;
-    color: rgb(238, 238, 236);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
-}</string>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_217">
-             <property name="spacing">
-              <number>3</number>
-             </property>
-             <property name="leftMargin">
               <number>2</number>
              </property>
-             <property name="topMargin">
-              <number>1</number>
-             </property>
-             <property name="rightMargin">
-              <number>2</number>
-             </property>
-             <property name="bottomMargin">
-              <number>1</number>
-             </property>
              <item>
-              <widget class="QLabel" name="label_148">
+              <widget class="QLabel" name="label_147">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                  <horstretch>0</horstretch>
@@ -959,32 +820,14 @@ color: rgb(255, 255, 255);
                  <height>33</height>
                 </size>
                </property>
-               <property name="font">
-                <font>
-                 <family>Bebas Kai</family>
-                 <pointsize>14</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="styleSheet">
-                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 5px;
-color: black;
-background: rgb(235, 235, 235);</string>
+                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                </property>
                <property name="text">
-                <string>0.0000</string>
+                <string>0.000</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-               <property name="format_string" stdset="0">
-                <string>%.4f</string>
                </property>
                <property name="bottom" stdset="0">
                 <double>-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000000000000</double>
@@ -993,13 +836,13 @@ background: rgb(235, 235, 235);</string>
              </item>
             </layout>
            </widget>
-           <widget class="QFrame" name="frame_61">
+           <widget class="QFrame" name="frame_56">
             <property name="geometry">
              <rect>
-              <x>586</x>
-              <y>13</y>
+              <x>3</x>
+              <y>426</y>
               <width>140</width>
-              <height>45</height>
+              <height>50</height>
              </rect>
             </property>
             <property name="sizePolicy">
@@ -1007,6 +850,18 @@ background: rgb(235, 235, 235);</string>
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
             </property>
             <property name="styleSheet">
              <string notr="true">.QFrame{
@@ -1018,150 +873,21 @@ background: rgb(235, 235, 235);</string>
 	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
 }</string>
             </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_219">
-             <property name="spacing">
-              <number>3</number>
-             </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_209">
              <property name="leftMargin">
               <number>2</number>
              </property>
              <property name="topMargin">
-              <number>1</number>
+              <number>2</number>
              </property>
              <property name="rightMargin">
               <number>2</number>
              </property>
              <property name="bottomMargin">
-              <number>1</number>
-             </property>
-             <item>
-              <widget class="QLabel" name="label_149">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                 <horstretch>0</horstretch>
-                 <verstretch>0</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="minimumSize">
-                <size>
-                 <width>50</width>
-                 <height>33</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>35</width>
-                 <height>33</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">QLabel{
-font: 75 13pt &quot;Bebas Kai&quot;;
-color: rgb(255, 255, 255);
-}</string>
-               </property>
-               <property name="text">
-                <string>X END</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignCenter</set>
-               </property>
-               <property name="wordWrap">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="FloatLineEdit" name="x_end_input">
-               <property name="sizePolicy">
-                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                 <horstretch>70</horstretch>
-                 <verstretch>33</verstretch>
-                </sizepolicy>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>70</width>
-                 <height>33</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <family>Bebas Kai</family>
-                 <pointsize>14</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 5px;
-color: black;
-background: rgb(235, 235, 235);</string>
-               </property>
-               <property name="text">
-                <string>0.0000</string>
-               </property>
-               <property name="alignment">
-                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-               <property name="format_string" stdset="0">
-                <string>%.4f</string>
-               </property>
-               <property name="bottom" stdset="0">
-                <double>-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000000000000</double>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-           <widget class="QFrame" name="frame_62">
-            <property name="geometry">
-             <rect>
-              <x>1</x>
-              <y>374</y>
-              <width>140</width>
-              <height>45</height>
-             </rect>
-            </property>
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">.QFrame{
-    border-style: solid;
-    border-color: black;
-    border-width: 2px;
-    border-radius: 6px;
-    color: rgb(238, 238, 236);
-	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
-}</string>
-            </property>
-            <layout class="QHBoxLayout" name="horizontalLayout_221">
-             <property name="spacing">
-              <number>3</number>
-             </property>
-             <property name="leftMargin">
               <number>2</number>
              </property>
-             <property name="topMargin">
-              <number>1</number>
-             </property>
-             <property name="rightMargin">
-              <number>2</number>
-             </property>
-             <property name="bottomMargin">
-              <number>1</number>
-             </property>
              <item>
-              <widget class="QLabel" name="label_155">
+              <widget class="QLabel" name="label_151">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                  <horstretch>0</horstretch>
@@ -1187,7 +913,7 @@ color: rgb(255, 255, 255);
 }</string>
                </property>
                <property name="text">
-                <string>Y END</string>
+                <string>HOLE START</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignCenter</set>
@@ -1198,7 +924,7 @@ color: rgb(255, 255, 255);
               </widget>
              </item>
              <item>
-              <widget class="FloatLineEdit" name="y_end_input">
+              <widget class="FloatLineEdit" name="z_start_input">
                <property name="sizePolicy">
                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                  <horstretch>70</horstretch>
@@ -1211,32 +937,14 @@ color: rgb(255, 255, 255);
                  <height>33</height>
                 </size>
                </property>
-               <property name="font">
-                <font>
-                 <family>Bebas Kai</family>
-                 <pointsize>14</pointsize>
-                 <weight>50</weight>
-                 <italic>false</italic>
-                 <bold>false</bold>
-                </font>
-               </property>
                <property name="styleSheet">
-                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 5px;
-color: black;
-background: rgb(235, 235, 235);</string>
+                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                </property>
                <property name="text">
-                <string>0.0000</string>
+                <string>0.000</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-               </property>
-               <property name="format_string" stdset="0">
-                <string>%.4f</string>
                </property>
                <property name="bottom" stdset="0">
                 <double>-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000000000000</double>
@@ -1244,17 +952,159 @@ background: rgb(235, 235, 235);</string>
               </widget>
              </item>
             </layout>
+           </widget>
+           <widget class="QFrame" name="frame_57">
+            <property name="geometry">
+             <rect>
+              <x>3</x>
+              <y>494</y>
+              <width>140</width>
+              <height>50</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>140</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">.QFrame{
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    border-radius: 6px;
+    color: rgb(238, 238, 236);
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgb(81, 86, 85), stop:0.489795 rgb(99, 102, 102), stop:0.699799 rgb(85, 88, 94), stop:0.90444 rgb(77, 84, 86), stop:0.160246 rgb(83, 84, 91), stop:1 rgb(109, 115, 118));
+}</string>
+            </property>
+            <layout class="QHBoxLayout" name="horizontalLayout_211">
+             <property name="leftMargin">
+              <number>2</number>
+             </property>
+             <property name="topMargin">
+              <number>2</number>
+             </property>
+             <property name="rightMargin">
+              <number>2</number>
+             </property>
+             <property name="bottomMargin">
+              <number>2</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_152">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="minimumSize">
+                <size>
+                 <width>50</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>50</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QLabel{
+font: 75 13pt &quot;Bebas Kai&quot;;
+color: rgb(255, 255, 255);
+}</string>
+               </property>
+               <property name="text">
+                <string>HOLE END</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="wordWrap">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="FloatLineEdit" name="z_end_input">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>70</horstretch>
+                 <verstretch>33</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>70</width>
+                 <height>33</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+               </property>
+               <property name="text">
+                <string>0.000</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               </property>
+               <property name="bottom" stdset="0">
+                <double>-179769313486231570814527423731704356798070567525844996598917476803157260780028538760589558632766878171540458953514382464234321326889464182768467546703537516986049910576551282076245490090389328944075868508455133942304583236903222948165808559332123348274797826204144723168738177180919299881250404026184124858368.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>92</x>
+              <y>0</y>
+              <width>550</width>
+              <height>535</height>
+             </rect>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>images/drill_circle.png</pixmap>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
            </widget>
            <zorder>label_2</zorder>
            <zorder>frame_24</zorder>
+           <zorder>frame_25</zorder>
+           <zorder>frame_42</zorder>
+           <zorder>frame_46</zorder>
+           <zorder>frame_47</zorder>
+           <zorder>verticalLayoutWidget_2</zorder>
            <zorder>frame_55</zorder>
            <zorder>frame_56</zorder>
            <zorder>frame_57</zorder>
-           <zorder>frame_58</zorder>
-           <zorder>frame_59</zorder>
-           <zorder>frame_60</zorder>
-           <zorder>frame_61</zorder>
-           <zorder>frame_62</zorder>
           </widget>
          </item>
         </layout>
@@ -1262,13 +1112,13 @@ background: rgb(235, 235, 235);</string>
       </item>
       <item>
        <widget class="QWidget" name="widget_2" native="true">
-        <property name="layoutDirection">
-         <enum>Qt::LeftToRight</enum>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
-         <property name="spacing">
-          <number>0</number>
-         </property>
          <property name="leftMargin">
           <number>0</number>
          </property>
@@ -1284,7 +1134,7 @@ background: rgb(235, 235, 235);</string>
          <item>
           <widget class="QFrame" name="bolt_hole_setup_frame_3">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
@@ -1292,13 +1142,13 @@ background: rgb(235, 235, 235);</string>
            <property name="minimumSize">
             <size>
              <width>500</width>
-             <height>540</height>
+             <height>525</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
              <width>500</width>
-             <height>540</height>
+             <height>525</height>
             </size>
            </property>
            <property name="frameShape">
@@ -1309,16 +1159,16 @@ background: rgb(235, 235, 235);</string>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout">
             <property name="leftMargin">
-             <number>15</number>
+             <number>9</number>
             </property>
             <property name="topMargin">
-             <number>10</number>
+             <number>9</number>
             </property>
             <property name="rightMargin">
-             <number>15</number>
+             <number>9</number>
             </property>
             <property name="bottomMargin">
-             <number>10</number>
+             <number>9</number>
             </property>
             <item>
              <widget class="QWidget" name="widget" native="true">
@@ -1335,11 +1185,146 @@ background: rgb(235, 235, 235);</string>
                <property name="bottomMargin">
                 <number>1</number>
                </property>
-               <property name="horizontalSpacing">
-                <number>6</number>
-               </property>
-               <item row="2" column="2">
-                <widget class="QComboBox" name="unit_input">
+               <item row="7" column="0">
+                <widget class="QLabel" name="label_170">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>120</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>120</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Bebas Kai</family>
+                   <pointsize>14</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="lineWidth">
+                  <number>0</number>
+                 </property>
+                 <property name="text">
+                  <string>SPINDLE RPM</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="indent">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QLabel" name="label_176">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>120</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>120</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Bebas Kai</family>
+                   <pointsize>14</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="lineWidth">
+                  <number>0</number>
+                 </property>
+                 <property name="text">
+                  <string>RETRACT MODE</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="indent">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0">
+                <widget class="QLabel" name="tool_number_label_3">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>120</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>120</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Bebas Kai</family>
+                   <pointsize>14</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="lineWidth">
+                  <number>0</number>
+                 </property>
+                 <property name="text">
+                  <string>TOOL NUMBER</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="indent">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="11" column="2">
+                <widget class="FloatLineEdit" name="clearance_height_input">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -1359,13 +1344,78 @@ background: rgb(235, 235, 235);</string>
                   </size>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 3px;
-color: black;
-background: rgb(235, 235, 235);</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>0.000</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="bottom" stdset="0">
+                  <double>0.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="2">
+                <widget class="QComboBox" name="drill_retract_mode_input">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="2">
+                <widget class="FloatLineEdit" name="spindle_rpm_input">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>0.0</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="format_string" stdset="0">
+                  <string>{0:.1f}</string>
+                 </property>
+                 <property name="bottom" stdset="0">
+                  <double>0.000000000000000</double>
                  </property>
                 </widget>
                </item>
@@ -1399,61 +1449,13 @@ background: rgb(235, 235, 235);</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                  </property>
                  <property name="lineWidth">
                   <number>0</number>
                  </property>
                  <property name="text">
                   <string>WCS</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                 </property>
-                 <property name="indent">
-                  <number>0</number>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="0">
-                <widget class="QLabel" name="label_170">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>120</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>120</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Bebas Kai</family>
-                   <pointsize>14</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
-                 </property>
-                 <property name="lineWidth">
-                  <number>0</number>
-                 </property>
-                 <property name="text">
-                  <string>SPINDLE RPM</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1493,8 +1495,7 @@ color: rgb(235, 235, 235);</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                  </property>
                  <property name="lineWidth">
                   <number>0</number>
@@ -1510,8 +1511,8 @@ color: rgb(235, 235, 235);</string>
                  </property>
                 </widget>
                </item>
-               <item row="3" column="0">
-                <widget class="QLabel" name="tool_number_label_3">
+               <item row="9" column="0">
+                <widget class="QLabel" name="label_173">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -1540,14 +1541,13 @@ color: rgb(235, 235, 235);</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                  </property>
                  <property name="lineWidth">
                   <number>0</number>
                  </property>
                  <property name="text">
-                  <string>TOOL NUMBER</string>
+                  <string>XY FEEDRATE</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1557,8 +1557,8 @@ color: rgb(235, 235, 235);</string>
                  </property>
                 </widget>
                </item>
-               <item row="5" column="2">
-                <widget class="QComboBox" name="coolant_input">
+               <item row="9" column="2">
+                <widget class="FloatLineEdit" name="xy_feed_rate_input">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -1578,13 +1578,16 @@ color: rgb(235, 235, 235);</string>
                   </size>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 3px;
-color: black;
-background: rgb(235, 235, 235);</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>0.000</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="bottom" stdset="0">
+                  <double>0.000000000000000</double>
                  </property>
                 </widget>
                </item>
@@ -1618,8 +1621,7 @@ background: rgb(235, 235, 235);</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
+                  <string>font: 14pt &quot;Bebas Kai&quot;;</string>
                  </property>
                  <property name="lineWidth">
                   <number>0</number>
@@ -1635,8 +1637,8 @@ color: rgb(235, 235, 235);</string>
                  </property>
                 </widget>
                </item>
-               <item row="3" column="2">
-                <widget class="IntLineEdit" name="tool_number_input">
+               <item row="10" column="2">
+                <widget class="FloatLineEdit" name="z_feed_rate_input">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                    <horstretch>0</horstretch>
@@ -1656,31 +1658,95 @@ color: rgb(235, 235, 235);</string>
                   </size>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">IntLineEdit {
-    font: 14pt &quot;Bebas Kai&quot;;
-    border-style: transparent;
-    border-color: rgb(235, 235, 235);
-    border-width: 1px;
-    border-radius: 3px;
-    color: black;
-    background: rgb(235, 235, 235);
-}</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                  </property>
                  <property name="text">
-                  <string>0</string>
+                  <string>0.000</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                  </property>
-                 <property name="default_value" stdset="0">
-                  <number>0</number>
-                 </property>
                  <property name="bottom" stdset="0">
-                  <number>0</number>
+                  <double>0.000000000000000</double>
                  </property>
                 </widget>
                </item>
-               <item row="7" column="0">
+               <item row="2" column="2">
+                <widget class="QComboBox" name="unit_input">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="2">
+                <widget class="QComboBox" name="wcs_input">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="2">
+                <widget class="QComboBox" name="coolant_input">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="10" column="0">
                 <widget class="QLabel" name="label_174">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -1710,8 +1776,7 @@ color: rgb(235, 235, 235);</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                  </property>
                  <property name="lineWidth">
                   <number>0</number>
@@ -1727,267 +1792,7 @@ color: rgb(235, 235, 235);</string>
                  </property>
                 </widget>
                </item>
-               <item row="6" column="0">
-                <widget class="QLabel" name="label_173">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>120</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>120</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Bebas Kai</family>
-                   <pointsize>14</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
-                 </property>
-                 <property name="lineWidth">
-                  <number>0</number>
-                 </property>
-                 <property name="text">
-                  <string>XY FEEDRATE</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-                 </property>
-                 <property name="indent">
-                  <number>0</number>
-                 </property>
-                </widget>
-               </item>
-               <item row="6" column="2">
-                <widget class="FloatLineEdit" name="xy_feed_rate_input">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>33</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">FloatLineEdit {
-    font: 14pt &quot;Bebas Kai&quot;;
-    border-style: transparent;
-    border-color: rgb(235, 235, 235);
-    border-width: 1px;
-    border-radius: 3px;
-    color: black;
-    background: rgb(235, 235, 235);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>0.0000</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                 </property>
-                 <property name="format_string" stdset="0">
-                  <string>%.4f</string>
-                 </property>
-                 <property name="bottom" stdset="0">
-                  <double>0.000000000000000</double>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="2">
-                <widget class="FloatLineEdit" name="spindle_rpm_input">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>33</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">FloatLineEdit {
-    font: 14pt &quot;Bebas Kai&quot;;
-    border-style: transparent;
-    border-color: rgb(235, 235, 235);
-    border-width: 1px;
-    border-radius: 3px;
-    color: black;
-    background: rgb(235, 235, 235);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>0.0</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                 </property>
-                 <property name="format_string" stdset="0">
-                  <string>%.1f</string>
-                 </property>
-                 <property name="bottom" stdset="0">
-                  <double>0.000000000000000</double>
-                 </property>
-                </widget>
-               </item>
-               <item row="9" column="2">
-                <widget class="FloatLineEdit" name="clearance_height_input">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>33</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">FloatLineEdit {
-    font: 14pt &quot;Bebas Kai&quot;;
-    border-style: transparent;
-    border-color: rgb(235, 235, 235);
-    border-width: 1px;
-    border-radius: 3px;
-    color: black;
-    background: rgb(235, 235, 235);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>0.0000</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-                 </property>
-                 <property name="format_string" stdset="0">
-                  <string>%.4f</string>
-                 </property>
-                 <property name="bottom" stdset="0">
-                  <double>0.000000000000000</double>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="2">
-                <widget class="QComboBox" name="wcs_input">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>100</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 3px;
-color: black;
-background: rgb(235, 235, 235);</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="4" column="3">
-                <widget class="QLabel" name="label_171">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>115</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>115</width>
-                   <height>35</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Bebas Kai</family>
-                   <pointsize>14</pointsize>
-                   <weight>50</weight>
-                   <italic>false</italic>
-                   <bold>false</bold>
-                  </font>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
-                 </property>
-                 <property name="lineWidth">
-                  <number>0</number>
-                 </property>
-                 <property name="text">
-                  <string>DIRECTION</string>
-                 </property>
-                 <property name="alignment">
-                  <set>Qt::AlignCenter</set>
-                 </property>
-                 <property name="indent">
-                  <number>0</number>
-                 </property>
-                </widget>
-               </item>
-               <item row="9" column="0">
+               <item row="11" column="0">
                 <widget class="QLabel" name="label_175">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -2017,8 +1822,7 @@ color: rgb(235, 235, 235);</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                  </property>
                  <property name="lineWidth">
                   <number>0</number>
@@ -2034,7 +1838,149 @@ color: rgb(235, 235, 235);</string>
                  </property>
                 </widget>
                </item>
-               <item row="5" column="0">
+               <item row="3" column="4">
+                <widget class="FloatLineEdit" name="drill_type_param_value">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>0.000</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="bottom" stdset="0">
+                  <double>0.000000000000000</double>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="2">
+                <widget class="QComboBox" name="drill_type_input">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="2">
+                <widget class="IntLineEdit" name="tool_number_input">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>100</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string>0</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="default_value" stdset="0">
+                  <number>0</number>
+                 </property>
+                 <property name="bottom" stdset="0">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QLabel" name="drill_type_label">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>120</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>120</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Bebas Kai</family>
+                   <pointsize>14</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="lineWidth">
+                  <number>0</number>
+                 </property>
+                 <property name="text">
+                  <string>DRILL TYPE</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="indent">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="0">
                 <widget class="QLabel" name="label_172">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -2064,8 +2010,7 @@ color: rgb(235, 235, 235);</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                  </property>
                  <property name="lineWidth">
                   <number>0</number>
@@ -2081,52 +2026,53 @@ color: rgb(235, 235, 235);</string>
                  </property>
                 </widget>
                </item>
-               <item row="7" column="2">
-                <widget class="FloatLineEdit" name="z_feed_rate_input">
+               <item row="7" column="3">
+                <widget class="QLabel" name="label_171">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>33</verstretch>
+                   <horstretch>1</horstretch>
+                   <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
                  <property name="minimumSize">
                   <size>
-                   <width>100</width>
+                   <width>115</width>
                    <height>35</height>
                   </size>
                  </property>
                  <property name="maximumSize">
                   <size>
-                   <width>100</width>
+                   <width>115</width>
                    <height>35</height>
                   </size>
                  </property>
+                 <property name="font">
+                  <font>
+                   <family>Bebas Kai</family>
+                   <pointsize>14</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
                  <property name="styleSheet">
-                  <string notr="true">FloatLineEdit {
-    font: 14pt &quot;Bebas Kai&quot;;
-    border-style: transparent;
-    border-color: rgb(235, 235, 235);
-    border-width: 1px;
-    border-radius: 3px;
-    color: black;
-    background: rgb(235, 235, 235);
-}</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="lineWidth">
+                  <number>0</number>
                  </property>
                  <property name="text">
-                  <string>0.0000</string>
+                  <string>DIRECTION</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  <set>Qt::AlignCenter</set>
                  </property>
-                 <property name="format_string" stdset="0">
-                  <string>%.4f</string>
-                 </property>
-                 <property name="bottom" stdset="0">
-                  <double>0.000000000000000</double>
+                 <property name="indent">
+                  <number>0</number>
                  </property>
                 </widget>
                </item>
-               <item row="4" column="4">
+               <item row="7" column="4">
                 <widget class="QComboBox" name="spindle_direction_input">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -2147,49 +2093,15 @@ color: rgb(235, 235, 235);</string>
                   </size>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 3px;
-color: black;
-background: rgb(235, 235, 235);</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                  </property>
                 </widget>
                </item>
-               <item row="0" column="2" colspan="3">
-                <widget class="QLineEdit" name="name_input">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>33</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>33</height>
-                  </size>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-border-style: transparent;
-border-color: rgb(235, 235, 235);
-border-width: 1px;
-border-radius: 3px;
-color: black;
-background: rgb(235, 235, 235);</string>
-                 </property>
-                 <property name="text">
-                  <string>Untitled</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="3" colspan="2">
+               <item row="6" column="3">
                 <widget class="QLabel" name="tool_description">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
+                   <horstretch>1</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
@@ -2215,8 +2127,7 @@ background: rgb(235, 235, 235);</string>
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
-color: rgb(235, 235, 235);</string>
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
                  </property>
                  <property name="lineWidth">
                   <number>0</number>
@@ -2225,7 +2136,67 @@ color: rgb(235, 235, 235);</string>
                   <string>NO TOOL SELECTED</string>
                  </property>
                  <property name="alignment">
-                  <set>Qt::AlignCenter</set>
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                 </property>
+                 <property name="indent">
+                  <number>0</number>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="2" colspan="3">
+                <widget class="QLineEdit" name="name_input">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;</string>
+                 </property>
+                 <property name="text">
+                  <string> Untitled</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="3">
+                <widget class="QLabel" name="drill_type_param_label">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>115</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>35</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">font: 14pt &quot;Bebas Kai&quot;;
+</string>
+                 </property>
+                 <property name="lineWidth">
+                  <number>0</number>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
                  </property>
                  <property name="indent">
                   <number>0</number>
@@ -2242,18 +2213,6 @@ color: rgb(235, 235, 235);</string>
                 <width>0</width>
                 <height>42</height>
                </size>
-              </property>
-              <property name="font">
-               <font>
-                <family>Bebas Kai</family>
-                <pointsize>15</pointsize>
-                <weight>50</weight>
-                <italic>false</italic>
-                <bold>false</bold>
-               </font>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">font: 15pt &quot;Bebas Kai&quot;;</string>
               </property>
               <property name="text">
                <string>POST TO FILE</string>
@@ -2288,17 +2247,6 @@ color: rgb(235, 235, 235);</string>
    <header>qtpyvcp_conversational_gcode.widgets.int_line_edit</header>
   </customwidget>
  </customwidgets>
- <tabstops>
-  <tabstop>x_end_input</tabstop>
-  <tabstop>retract_height_input</tabstop>
-  <tabstop>step_down_input</tabstop>
-  <tabstop>name_input</tabstop>
-  <tabstop>wcs_input</tabstop>
-  <tabstop>unit_input</tabstop>
-  <tabstop>coolant_input</tabstop>
-  <tabstop>xy_feed_rate_input</tabstop>
-  <tabstop>z_feed_rate_input</tabstop>
- </tabstops>
  <resources/>
  <connections/>
 </ui>

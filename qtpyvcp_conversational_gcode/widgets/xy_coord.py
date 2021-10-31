@@ -83,7 +83,7 @@ class XYCoordModel(QStandardItemModel):
 
 class XYCoordWidget(DrillWidgetBase):
     def __init__(self, parent=None):
-        super(XYCoordWidget, self).__init__(parent, 'xy_coord.ui')
+        super(XYCoordWidget, self).__init__(parent, 'xy_coord_vertical.ui')
 
         self.drill_op = DrillOps()
         self.xy_coord_input.setModel(XYCoordModel(self.drill_op.holes))
