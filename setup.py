@@ -20,5 +20,9 @@ setup(
     download_url="https://github.com/kcjengr/qtpyvcp.conversational-gcode/tarball/master",
     packages=find_packages(),
     include_package_data=True,
-    entry_points=entry_points
+    entry_points={
+        'gui_scripts': [
+            'qtpyvcp_conversational_gcode=qtpyvcp_conversational_gcode:main',
+        ]
+    },
 )
