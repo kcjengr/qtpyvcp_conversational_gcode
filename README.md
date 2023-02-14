@@ -6,7 +6,7 @@ This repository contains conversational G-code generator widgets.
 
 ## Install
 
-`pip install git+https://github.com/kcjengr/qtpyvcp.conversational-gcode.git`
+`pip install git+https://github.com/kcjengr/qtpyvcp_conversational_gcode.git`
 
 or clone or download the repo and run
 
