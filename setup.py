@@ -1,3 +1,4 @@
+import versioneer
 from setuptools import setup, find_packages
 
 with open("README.md", "r") as fh:
@@ -8,7 +9,8 @@ with open("entry_points.ini", "r") as fh:
 
 setup(
     name="qtpyvcp.conversational_gcode",
-    version="0.0.1",
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     author="Aaron Dargel",
     author_email="",
     description="QtPyVCP Conversation G-code generator widgets.",
