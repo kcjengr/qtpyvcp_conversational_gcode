@@ -1,0 +1,16 @@
+Source: qtpyvcp-conversational-gcode
+Section: cnc
+Priority: optional
+Maintainer: Kcjengr <kcjengr@gmail.com>
+Build-Depends: debhelper-compat (= 13), dh-python, python3-qtpyvcp
+Standards-Version: 4.5.1
+Homepage: https://github.com/kcjengr/qtpyvcp_conversational_gcode
+Vcs-Git: https://github.com/kcjengr/qtpyvcp_conversational_gcode.git
+X-Python3-Version: >= 3.7
+#Testsuite: autopkgtest-pkg-python
+Rules-Requires-Root: no
+
+Package: python3-qtpyvcp-conversational-gcode
+Architecture: all
+Description: qtpyvcp conversational gcode is a qtpyvcp virtual control panel widget used in LinuxCNC machine control.
+Depends: ${python3:Depends}, ${misc:Depends}, python3-qtpyvcp
